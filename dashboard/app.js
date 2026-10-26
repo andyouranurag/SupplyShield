@@ -91,15 +91,18 @@ const EVENT_TYPES = [
   { icon: '💰', name: 'Trade Dispute',    count: 1534, color: '#ec4899' },
 ];
 
-// Chart colour palette
+// Executive enterprise chart colour palette
 const COLORS = {
-  critical: '#f43f5e',
-  high:     '#f97316',
-  medium:   '#f59e0b',
-  violet:   '#6366f1',
-  purple:   '#a855f7',
-  cyan:     '#06b6d4',
-  emerald:  '#10b981',
+  critical: '#EF4444',
+  high:     '#F59E0B',
+  medium:   '#3B82F6',
+  blue:     '#2563EB',
+  indigo:   '#4F46E5',
+  teal:     '#0D9488',
+  emerald:  '#10B981',
+  slate:    '#64748B',
+  border:   '#1E293B',
+  grid:     'rgba(255, 255, 255, 0.04)',
 };
 
 // ── State ─────────────────────────────────────────────────
@@ -190,16 +193,16 @@ function initOverviewCharts() {
         datasets: [{
           data: [16, 3, 1],
           backgroundColor: [
-            'rgba(244,63,94,0.7)', 'rgba(249,115,22,0.7)', 'rgba(245,158,11,0.7)'
+            'rgba(239, 68, 68, 0.85)', 'rgba(245, 158, 11, 0.85)', 'rgba(59, 130, 246, 0.85)'
           ],
-          borderRadius: 6, borderSkipped: false,
+          borderRadius: 4, borderSkipped: false,
         }]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
         scales: {
-          x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#606080', font: { size: 11 } } },
-          y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#606080', stepSize: 4 }, beginAtZero: true }
+          x: { grid: { color: COLORS.grid }, ticks: { color: COLORS.slate, font: { size: 10 } } },
+          y: { grid: { color: COLORS.grid }, ticks: { color: COLORS.slate, stepSize: 4 }, beginAtZero: true }
         },
         plugins: { legend: { display: false } }
       }
@@ -221,19 +224,20 @@ function initOverviewCharts() {
           label: 'Disruption Probability',
           data: sorted.map(a => +(a.disruption_probability * 100).toFixed(1)),
           fill: true,
-          borderColor: COLORS.violet,
-          backgroundColor: 'rgba(99,102,241,0.1)',
+          borderColor: COLORS.blue,
+          backgroundColor: 'rgba(37, 99, 235, 0.08)',
           pointBackgroundColor: colors,
-          pointRadius: 6,
-          pointHoverRadius: 8,
-          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          borderWidth: 2,
+          tension: 0.25,
         }]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
         scales: {
-          x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#606080', font: { size: 10 }, maxRotation: 45 } },
-          y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#606080', callback: v => v + '%' }, min: 0, max: 100 }
+          x: { grid: { color: COLORS.grid }, ticks: { color: COLORS.slate, font: { size: 10 }, maxRotation: 45 } },
+          y: { grid: { color: COLORS.grid }, ticks: { color: COLORS.slate, callback: v => v + '%' }, min: 0, max: 100 }
         },
         plugins: {
           legend: { display: false },

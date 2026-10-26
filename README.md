@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-indigo.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
 [![Dashboard: Live](https://img.shields.io/badge/Dashboard-HTML5%20%2B%20CSS3-violet.svg)](dashboard/index.html)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fandyouranurag%2FSupplyShield)
 [![AI Architecture: 5--Library Fusion](https://img.shields.io/badge/Architecture-5--Library%20Fusion-emerald.svg)](PROJECT_EXPLANATION_GUIDE.md)
 
 SupplyShield is a state-of-the-art, multi-modal, evidence-grounded AI early-warning system designed to predict, explain, and mitigate global supply chain disruptions before physical stock-outs occur.

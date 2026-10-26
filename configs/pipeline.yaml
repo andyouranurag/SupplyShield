@@ -1,0 +1,87 @@
+# configs/pipeline.yaml
+# =====================
+# Shared configuration for the five-library integration pipeline.
+# Edit values here; never hard-code them in Python files.
+
+# ── Library paths (relative to the project root) ────────────────────────────
+library_paths:
+  - SupplyChainTimeSeries/SupplyChainTimeSeries    # inner package folder (Person 1)
+  - NewsIntelligence                               # Person 2
+  - SupplyChainEventRisk                           # Person 3
+  - MultimodalWarning                              # Person 4
+  - ExplainableWarning                             # Person 5
+
+# ── Data paths ───────────────────────────────────────────────────────────────
+data:
+  ts_csv:        "SupplyChainTimeSeries/SupplyChainTimeSeries/data/Inventory_SupplyChain_Dataset.csv"
+  news_csv:      "NewsIntelligence/NewsIntelligence/data/news_long.csv"
+  events_csv:    "SupplyChainEventRisk/data/sample_external_events.csv"
+  network_csv:   "SupplyChainEventRisk/data/sample_supply_chain_network.csv"
+  multimodal_cfg: "MultimodalWarning/configs/multimodal.yaml"
+
+# ── Person 1 (SupplyChainTimeSeries) ─────────────────────────────────────────
+timeseries:
+  group_col:      "Supplier"
+  window:         7
+  contamination:  0.05
+  date_format:    "%Y-%m-%d"
+
+# ── Person 2 (NewsIntelligence) ───────────────────────────────────────────────
+news:
+  date_format:        "%Y-%m-%d"
+  output_date_format: "%d-%m-%Y"
+  fill_missing_days:  true
+
+# ── Person 3 (SupplyChainEventRisk) ──────────────────────────────────────────
+events:
+  radius_km:     300
+  lookback_days: 14
+
+# ── Column bridge: actual column names → shared schema names ─────────────────
+# Person 1 actual → fusion expected
+ts_column_map:
+  Supplier:              entity_id
+  Date:                  timestamp
+  Lead_Time_Pressure:    lead_time_risk
+  Inventory_Risk:        inventory_risk
+  Anomaly_Score:         demand_anomaly_score
+  Lead_Time_Lag_7:       delay_lag_7d
+  Lead_Time_MA_7:        rolling_mean_delay
+  Temporal_Risk_Score:   temporal_risk_score
+
+# Person 2 actual → fusion expected
+news_column_map:
+  news_risk_score:   disruption_risk_score
+  avg_sentiment:     sentiment_score
+  event_type:        event_type_label
+
+# Person 3 actual → fusion expected
+event_column_map:
+  event_date:            timestamp
+  node_id:               entity_id
+  Event_Severity:        event_severity
+  External_Event_Risk:   external_event_risk
+  Infrastructure_Flag:   infrastructure_risk
+
+# ── Person 4 (MultimodalWarning) ─────────────────────────────────────────────
+fusion:
+  strategy: "intermediate"   # "early" | "intermediate" | "late"
+
+# ── Person 5 (ExplainableWarning) ────────────────────────────────────────────
+explainability:
+  feature_method:       "permutation"   # "auto" | "shap" | "permutation"
+  cross_modal_method:   "ablation"      # "auto" | "group_shap" | "ablation"
+  uncertainty_method:   "ensemble"      # "ensemble" | "mc_dropout" | "calibration_isotonic" | "conformal"
+  feature_top_k:        10
+  text_top_k:           5
+  event_top_k:          5
+  n_background:         50
+  consistency_threshold: 0.75
+
+# ── Pipeline behaviour ────────────────────────────────────────────────────────
+pipeline:
+  alert_threshold: 0.50         # disruption_probability to raise an alert
+  min_alert_level: "medium"     # minimum risk_level to include in report
+  save_intermediate: true       # save per-step CSVs to outputs/
+  output_dir:        "integration/outputs"
+  random_seed:       42

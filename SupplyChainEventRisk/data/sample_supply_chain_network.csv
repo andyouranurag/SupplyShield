@@ -1,0 +1,5 @@
+node_id,node_name,node_type,latitude,longitude
+N001,Delhi Distribution Hub,distribution_hub,28.6139,77.209
+N002,Mumbai Port,port,19.076,72.8777
+N003,Jaipur Warehouse,warehouse,26.9124,75.7873
+N004,Lucknow Supplier,supplier,26.8467,80.9462

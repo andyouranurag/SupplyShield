@@ -1,0 +1,4 @@
+event_id,event_date,event_type,description,latitude,longitude,severity,source
+EV001,2026-10-20,flood,Flood affecting road infrastructure near distribution hub,28.6139,77.209,high,synthetic_example
+EV002,2026-10-19,geopolitical_strike,Transport strike near regional port,19.076,72.8777,severe,synthetic_example
+EV003,2026-10-21,storm,Storm warning near warehouse,26.9124,75.7873,medium,synthetic_example

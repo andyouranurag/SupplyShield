@@ -1,0 +1,97 @@
+# configs/multimodal.yaml
+# ========================
+# Shared configuration for the MultimodalWarning library.
+# All parameters are documented. Change values here — never in code.
+
+# ── Feature alignment ─────────────────────────────────────────────────────────
+window_size:  "7D"          # Pandas offset string: time window per entity
+entity_col:   "entity_id"   # Column name for the entity identifier
+time_col:     "timestamp"   # Column name for observation timestamps
+fill_strategy: "zero"       # "zero" | "forward" | "mean"  (for missing modality)
+
+# Expected feature column names from each upstream library
+# (must match what SupplyChainTimeSeries / NLP / EventRisk outputs)
+ts_feature_cols:
+  - "lead_time_risk"
+  - "inventory_risk"
+  - "demand_anomaly_score"
+  - "delay_lag_7d"
+  - "delay_lag_14d"
+  - "rolling_mean_delay"
+  - "rolling_std_delay"
+
+news_feature_cols:
+  - "event_severity"
+  - "disruption_risk_score"
+  - "sentiment_score"
+  - "entity_relevance"
+  - "news_embedding_dim0"   # first PCA dimension of news embedding
+  - "news_embedding_dim1"
+
+event_feature_cols:
+  - "weather_severity"
+  - "geo_event_severity"
+  - "infrastructure_risk"
+  - "node_impact_score"
+  - "route_risk"
+  - "port_risk"
+
+# ── Fusion ────────────────────────────────────────────────────────────────────
+fusion_strategy: "intermediate"   # "early" | "intermediate" | "late"
+
+# Early fusion
+classifier: "gradient_boosting"
+early_fusion_params:
+  n_estimators: 200
+  max_depth: 4
+  learning_rate: 0.05
+  subsample: 0.8
+  random_state: 42
+
+# Intermediate fusion
+backend:        "numpy"    # "numpy" (no GPU) | "torch"
+embed_dim:      64
+encoder_hidden: 128
+dropout:        0.1
+learning_rate:  0.001
+epochs:         50
+batch_size:     32
+
+# Late fusion
+per_modality_clf: "gradient_boosting"
+ensemble_rule:    "stack"          # "stack" | "mean" | "max" | "weighted"
+modality_weights:
+  timeseries: 1.0
+  news:        1.2
+  events:      1.1
+
+late_fusion_params:
+  n_estimators: 100
+  max_depth: 3
+  random_state: 42
+
+# ── Risk scoring ──────────────────────────────────────────────────────────────
+low_threshold:    0.35
+medium_threshold: 0.60
+high_threshold:   0.80
+critical_uplift:  0.05
+trend_window:     3           # number of past windows used for trend detection
+alert_level:     "medium"     # minimum risk level to raise an alert
+
+# Entity IDs that receive the critical_uplift (comma-separated in YAML)
+critical_entities: []
+
+# ── Disruption type classifier ────────────────────────────────────────────────
+type_classifier: "rule_based"   # "rule_based" | "softmax_head"
+
+# ── Horizon prediction ────────────────────────────────────────────────────────
+mode:           "rule_based"    # "regression" | "ordinal" | "rule_based"
+use_embedding:  true
+regressor:      "gradient_boosting"
+regressor_params:
+  n_estimators: 100
+  max_depth: 3
+  random_state: 42
+
+# ── Evaluation ────────────────────────────────────────────────────────────────
+prediction_threshold: 0.50

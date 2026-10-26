@@ -1,0 +1,1 @@
+Extract the ZIP. Install dependencies with: pip install -r requirements.txt. Run example: python -m SupplyChainTimeSeries.example_integration. Dataset is bundled inside SupplyChainTimeSeries/data/.

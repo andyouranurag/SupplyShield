@@ -1,0 +1,380 @@
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 99.9%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2020-05-29)
+
+Major contributing factors
+  1. [News] Iran's Government Criticized For Inaction Against Large Wildfires
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['natural_disaster']] Iran's Government Criticized For Inaction Against Large W
+  [NE] [['natural_disaster']] Virus, heat wave and locusts form perfect storm in India 
+  [NE] [['factory_outage']] Lockdown easing to allow groups of six to meet (risk_score=
+  [NE] [['factory_outage']] Coronavirus: Belgian Prince Joachim tests positive after lo
+  [NE] [['factory_outage']] Lockdown 5.0 live updates: Conduct sero-survey to track Cov
+=======================================================
+
+=======================================================
+[HIGH]  WARNING: HIGH DISRUPTION RISK  [HIGH]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 70.5%
+Disruption type       : transport_delay
+Expected horizon      : short_term  (2020-06-13)
+
+Major contributing factors
+  1. [News] Coronavirus India: A 40-year-old man raped and impregnated his minor d
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['factory_outage']] Coronavirus India: A 40-year-old man raped and impregnated 
+  [NE] [['factory_outage']] In post-lockdown China, student mental health in focus amid
+  [NE] [[]] Bolsonaro threatens WHO exit as COVID-19 kills 'a Brazilian per minute' (ri
+  [NE] [[]] Dozens of suspected jihadists attacked a frontier post on Ivory Coast's bor
+  [NE] [[]] MASSIVE OIL SPILL IN ARCTIC CIRCLE!! Arctic Circle oil spill prompts Putin 
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 94.6%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-01-21)
+
+Major contributing factors
+  1. [News] Ukraine crisis: UK 'not optimistic' Russian invasion can be stopped
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Ukraine crisis: UK 'not optimistic' Russian invasion can be s
+  [NE] [['natural_disaster']] Some 10,000 people in the northern town of Beit She'an wi
+  [NE] [['geopolitical']] Australians in Ukraine describe 'two different realities' as 
+  [NE] [['geopolitical']] China criticizes US missile sanctions as hypocrisy (risk_scor
+  [NE] [['geopolitical']] UK warns Russia will face severe sanctions if it puts puppet 
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 100.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-02-04)
+
+Major contributing factors
+  1. [News] US alleges Russian plot to fake invasion pretext
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] US alleges Russian plot to fake invasion pretext (risk_score=
+  [NE] [['natural_disaster']] A violent bomb cyclone with pressure below 930 mbar is fo
+  [NE] [['geopolitical']] Is a Russian Invasion of Ukraine Inevitable? (risk_score=0.90
+  [NE] [['geopolitical']] U.S. Officials Say Russia Preparing Full-Scale Invasion of Uk
+  [NE] [['geopolitical']] Lawmakers emerge from Russia-Ukraine briefings bracing for in
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 100.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-02-11)
+
+Major contributing factors
+  1. [News] Israel's Foreign Ministry declared a state of emergency on Saturday in
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Israel's Foreign Ministry declared a state of emergency on Sa
+  [NE] [['natural_disaster']] The intense behavior of the Polar Vortex this winter seas
+  [NE] [['geopolitical']] U.S. warns against Russian false claims being used as pretext
+  [NE] [['port_closure']] Amidst trucker convoy anti mandate blockades going on in cana
+  [NE] [['geopolitical']] Biden: Ukraine invasion still ‘distinctly possible’ despite R
+=======================================================
+
+=======================================================
+[HIGH]  WARNING: HIGH DISRUPTION RISK  [HIGH]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 61.1%
+Disruption type       : transport_delay
+Expected horizon      : short_term  (2022-03-12)
+
+Major contributing factors
+  1. [News] Angry dock workers in the UK are refusing to unload Russian oil due to
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Angry dock workers in the UK are refusing to unload Russian o
+  [NE] [['geopolitical']] Boris Johnson says Putin sees no way out of Ukraine invasion 
+  [NE] [['shortage', 'geopolitical']] Oil Soars as Russian Embargo Talk Fuels Fears of 
+  [NE] [['geopolitical']] More than 100 Ukrainian workers have been trapped at Chernoby
+  [NE] [['geopolitical']] Prosecutor’s office of the Hague is collecting evidence of wa
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 99.9%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-03-18)
+
+Major contributing factors
+  1. [News] Putin’s invasion of Ukraine is seen as his biggest ever mistake — and 
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Putin’s invasion of Ukraine is seen as his biggest ever mista
+  [NE] [['geopolitical']] Kyiv Independent: "UN: At least 847 civilians, including 64 c
+  [NE] [['geopolitical']] US Unexpectedly Sanctions China Officials Hours After Demandi
+  [NE] [['natural_disaster']] NSW announces inquiry into flood crisis after criticism o
+  [NE] [['geopolitical']] Crypto is not a sanctions escape for Russia: Chia Network COO
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 100.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-03-25)
+
+Major contributing factors
+  1. [News] Putin’s invasion of Ukraine is seen as his biggest ever mistake — and 
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Putin’s invasion of Ukraine is seen as his biggest ever mista
+  [NE] [['geopolitical']] Putin Will Have 'No Choice' but to Stop Ukraine Invasion: For
+  [NE] [['natural_disaster']] It’s not just Ukrainians looking to come to Canada. A flo
+  [NE] [['natural_disaster']] Curfew in Sri Lanka as protesters try to storm president’
+  [NE] [['geopolitical']] Australia Imposes Sanctions on Belarus President, Places More
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 94.6%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-04-01)
+
+Major contributing factors
+  1. [News] Ukraine seeks ruinous sanctions on Russia amid European hesitancy
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Ukraine seeks ruinous sanctions on Russia amid European hesit
+  [NE] [['geopolitical']] China, Russia slam ‘illegal’ international sanctions targetin
+  [NE] [['shortage']] A fertilizer shortage, worsened by war in Ukraine, is driving up 
+  [NE] [['shortage', 'logistics_delay']] Antonov shortage threatens delivery delays for
+  [NE] [['natural_disaster']] Curfew in Sri Lanka as protesters try to storm president’
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 100.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-04-08)
+
+Major contributing factors
+  1. [News] Antonov shortage threatens delivery delays for the biggest satellites
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['shortage', 'logistics_delay']] Antonov shortage threatens delivery delays for
+  [NE] [['natural_disaster']] Floods in South Africa's Durban area kill more than 340 (
+  [NE] [['natural_disaster']] Sex Traffickers Storm The Border (risk_score=0.936)
+  [NE] [['shortage']] Long Covid: the invisible public health crisis fuelling labour sh
+  [NE] [['geopolitical']] Cyberattacks on the rise since the start of the Ukraine invas
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 100.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-04-22)
+
+Major contributing factors
+  1. [News] Russia-Ukraine war: Russians try to storm Mariupol plant
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['natural_disaster']] Russia-Ukraine war: Russians try to storm Mariupol plant 
+  [NE] [['natural_disaster']] Lake Mead water valve is exposed for the first time amid 
+  [NE] [['shortage']] Peru Risks Hunger Spike on Fertilizer Shortages, Food Producers W
+  [NE] [['factory_outage']] Beijing races to contain 'urgent and grim' Covid outbreak a
+  [NE] [['natural_disaster']] Ukraine reports Russian forces attempting to storm Mariup
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 86.1%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-04-29)
+
+Major contributing factors
+  1. [News] people are losing it because of the extreme lockdown in Shanghai
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['factory_outage']] people are losing it because of the extreme lockdown in Sha
+  [NE] [['natural_disaster']] Lake Mead water valve is exposed for the first time amid 
+  [NE] [['factory_outage', 'logistics_delay']] Shanghai's exit from lockdown delayed by
+  [NE] [['natural_disaster']] Burkina Faso investigates B.C. mine company after flood l
+  [NE] [['geopolitical']] Slovakia, Hungary will not support EU sanctions on Russian en
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 99.9%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-05-06)
+
+Major contributing factors
+  1. [News] Ukraine war: Russia must withdraw to pre-invasion position for a deal 
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Ukraine war: Russia must withdraw to pre-invasion position fo
+  [NE] [['factory_outage']] people are losing it because of the extreme lockdown in Sha
+  [NE] [['factory_outage', 'logistics_delay']] Shanghai's exit from lockdown delayed by
+  [NE] [['factory_outage']] 'Stop asking why': Shanghai tightens COVID lockdown, Beijin
+  [NE] [['geopolitical']] Match Group/Tinder defied calls to abandon Russia amid invasi
+=======================================================
+
+=======================================================
+[MEDIUM]  WARNING: MEDIUM DISRUPTION RISK  [MEDIUM]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 56.6%
+Disruption type       : transport_delay
+Expected horizon      : medium_term  (2022-07-01)
+
+Major contributing factors
+  1. [News] Russian Sanctions Are Hurting U.S. WAY MORE Than Russia
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] Russian Sanctions Are Hurting U.S. WAY MORE Than Russia (risk
+  [NE] [['shortage']] Oil Shock Devastates Poorer Nations as Shortages, Protests Mount 
+  [NE] [['geopolitical']] Cuba sanctions nearly 400 people over anti-government protest
+  [NE] [['geopolitical']] Oil rebounds as new Iran sanctions fuel more supply concerns 
+  [NE] [['geopolitical']] Russian invasion is ‘Covid-22’ and arms are a vaccine, says V
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 90.2%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-07-15)
+
+Major contributing factors
+  1. [News] Wildfires rage in France and Spain as heatwaves sear Europe
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['natural_disaster']] Wildfires rage in France and Spain as heatwaves sear Euro
+  [NE] [['natural_disaster']] At least 6 killed as dust storm triggers massive pileup i
+  [NE] [['natural_disaster']] 2 children were among 6 people killed in a Montana highwa
+  [NE] [['geopolitical']] Russian journalist who staged TV protest over Ukraine invasio
+  [NE] [['natural_disaster']] Pearl Jam Cancel Show After Eddie Vedder’s Voice Damaged 
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 99.8%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-07-29)
+
+Major contributing factors
+  1. [News] Iraq: Muqtada al-Sadr supporters storm parliament again
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['natural_disaster']] Iraq: Muqtada al-Sadr supporters storm parliament again (
+  [NE] [['geopolitical']] Senate OK's bid by Sweden, Finland to join NATO in response t
+  [NE] [[]] Revealed: how climate breakdown is supercharging toll of extreme weather | 
+  [NE] [[]] Russia, Ukraine trade blame for dozens of deaths in Donetsk prison destruct
+  [NE] [[]] Ukraine war: First grain ship out of Ukraine reaches Turkish waters (risk_s
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 100.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-08-05)
+
+Major contributing factors
+  1. [News] ‘Standing up for the oppressed’ The Kremlin’s newest propaganda guide 
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['geopolitical']] ‘Standing up for the oppressed’ The Kremlin’s newest propagan
+  [NE] [['port_closure', 'geopolitical']] Four ways China could take Taiwan from blocka
+  [NE] [['geopolitical']] Sanctions are working - whatever Putin says (risk_score=0.900
+  [NE] [['geopolitical']] How Russia's invasion of Ukraine has accelerated the global t
+  [NE] [['natural_disaster']] Source of River Thames dries out ‘for first time’ during 
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 100.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-08-19)
+
+Major contributing factors
+  1. [News] China plans cloud seeding to protect grain crop from drought
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['natural_disaster']] China plans cloud seeding to protect grain crop from drou
+  [NE] [['geopolitical']] U.S. Treasury official warns Russia trying to bypass Western 
+  [NE] [['natural_disaster']] Drought reveals sunken Nazi warships laden with explosive
+  [NE] [['natural_disaster']] Drought Reveals 110-Million-Year-Old Dinosaur Tracks In T
+  [NE] [['geopolitical']] Topless protesters with 'gas embargo now' painted on their ch
+=======================================================
+
+=======================================================
+[CRITICAL]  WARNING: CRITICAL DISRUPTION RISK  [CRITICAL]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 97.0%
+Disruption type       : transport_delay
+Expected horizon      : immediate  (2022-09-30)
+
+Major contributing factors
+  1. [News] Biden: Destruction from Hurricane Ian likely to be among the worst in 
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['natural_disaster']] Biden: Destruction from Hurricane Ian likely to be among 
+  [NE] [['natural_disaster']] Furious Cubans protest in streets as Hurricane Ian blacko
+  [NE] [['natural_disaster']] Hurricane Ian death toll climbs to at least 68; over 4,00
+  [NE] [['natural_disaster']] Hurricane Ian a 'catastrophe' for Cuba's vital cigar sect
+  [NE] [['natural_disaster']] Sanibel and Captiva islands cut off from Florida mainland
+=======================================================
+
+=======================================================
+[HIGH]  WARNING: HIGH DISRUPTION RISK  [HIGH]
+=======================================================
+Entity                : Supplier A
+Disruption probability: 62.6%
+Disruption type       : transport_delay
+Expected horizon      : short_term  (2022-10-15)
+
+Major contributing factors
+  1. [News] Nicaragua on hurricane alert as Storm Julia approaches
+
+Evidence  (5/5 items passed consistency checks, rate=100%)
+  [NE] [['natural_disaster']] Nicaragua on hurricane alert as Storm Julia approaches (r
+  [NE] [['geopolitical']] Hungary and Serbia have agreed to build a pipeline to supply 
+  [NE] [['shortage']] Today North Korea Launched 150 Fighter Jets for the First Time Ev
+  [NE] [['shortage']] North Korea Launches 150 Fighter Jets for the First Time Ever..."
+  [NE] [['natural_disaster']] Sydney records wettest year since 1858 as Australia brace
+=======================================================
+

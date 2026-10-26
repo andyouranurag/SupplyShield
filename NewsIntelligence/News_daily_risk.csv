@@ -1,0 +1,1217 @@
+Date,news_risk_score,event_type,top_phrases,avg_sentiment,n_articles
+01-01-2020,0.453,logistics_delay,delay,-0.216,24
+02-01-2020,0.131,none,,-0.195,25
+03-01-2020,0.114,none,,-0.33,25
+04-01-2020,0.58,geopolitical,invasion; flood,-0.344,22
+05-01-2020,0.508,natural_disaster,wildfire,-0.116,25
+06-01-2020,0.504,natural_disaster,wildfire,-0.174,24
+07-01-2020,0.075,none,,-0.24,24
+08-01-2020,0.525,natural_disaster,flooding,-0.293,25
+09-01-2020,0.484,natural_disaster,earthquake,-0.088,23
+10-01-2020,0.101,none,,-0.209,25
+11-01-2020,0.495,natural_disaster,wildfire,-0.282,25
+12-01-2020,0.545,natural_disaster,wildfire; storm,-0.087,25
+13-01-2020,0.523,logistics_delay,delayed; storm,-0.124,24
+14-01-2020,0.137,none,,0.028,25
+15-01-2020,0.102,none,,-0.163,25
+16-01-2020,0.116,none,,-0.246,25
+17-01-2020,0.102,none,,-0.195,25
+18-01-2020,0.088,none,,0.008,24
+19-01-2020,0.524,natural_disaster,storm,-0.092,25
+20-01-2020,0.131,none,,-0.227,23
+21-01-2020,0.11,none,,-0.067,24
+22-01-2020,0.572,geopolitical,lockdown; sanction; tariff,-0.187,24
+23-01-2020,0.113,none,,-0.309,24
+24-01-2020,0.523,natural_disaster,earthquake,-0.189,25
+25-01-2020,0.582,geopolitical,sanction; embargo; earthquake,-0.234,24
+26-01-2020,0.154,none,,-0.336,25
+27-01-2020,0.072,none,,0.033,25
+28-01-2020,0.544,natural_disaster,earthquake; tsunami,-0.275,24
+29-01-2020,0.142,none,,-0.213,25
+30-01-2020,0.116,none,,-0.135,25
+31-01-2020,0.115,none,,-0.079,25
+01-02-2020,0.103,none,,-0.106,24
+02-02-2020,0.091,none,,-0.078,25
+03-02-2020,0.164,none,,-0.144,25
+04-02-2020,0.515,natural_disaster,flooding; drought,-0.134,23
+05-02-2020,0.1,none,,-0.122,24
+06-02-2020,0.42,logistics_delay,delay,-0.162,24
+07-02-2020,0.093,none,,-0.011,24
+08-02-2020,0.124,none,,-0.131,25
+09-02-2020,0.533,natural_disaster,hurricane,-0.236,24
+10-02-2020,0.489,geopolitical,sanction,-0.106,24
+11-02-2020,0.113,none,,-0.126,24
+12-02-2020,0.106,none,,-0.101,24
+13-02-2020,0.501,factory_outage,lockdown; storm,-0.049,25
+14-02-2020,0.425,logistics_delay,delay,-0.259,23
+15-02-2020,0.494,port_closure,blockade,0.008,25
+16-02-2020,0.546,geopolitical,sanction; blockade; lockdown,-0.036,25
+17-02-2020,0.558,port_closure,blockade; flooding; trade war; shortage,-0.036,23
+18-02-2020,0.543,shortage,shortage; delay,-0.108,24
+19-02-2020,0.136,none,,-0.289,24
+20-02-2020,0.493,geopolitical,sanction,-0.077,25
+21-02-2020,0.115,none,,-0.064,22
+22-02-2020,0.533,natural_disaster,wildfire; storm,-0.23,24
+23-02-2020,0.55,natural_disaster,earthquake,-0.216,24
+24-02-2020,0.104,none,,-0.084,25
+25-02-2020,0.136,none,,-0.278,24
+26-02-2020,0.114,none,,-0.274,25
+27-02-2020,0.137,none,,-0.285,25
+28-02-2020,0.103,none,,0.025,24
+29-02-2020,0.102,none,,-0.041,24
+01-03-2020,0.117,none,,-0.271,25
+02-03-2020,0.123,none,,-0.171,25
+03-03-2020,0.527,natural_disaster,wildfire,-0.267,24
+04-03-2020,0.093,none,,-0.049,25
+05-03-2020,0.542,geopolitical,sanction,-0.171,25
+06-03-2020,0.105,none,,-0.218,24
+07-03-2020,0.512,factory_outage,lockdown,-0.156,25
+08-03-2020,0.101,none,,-0.32,23
+09-03-2020,0.534,natural_disaster,storm,-0.321,24
+10-03-2020,0.096,none,,0.094,24
+11-03-2020,0.443,logistics_delay,delay,-0.25,25
+12-03-2020,0.554,natural_disaster,flooding; storm,-0.096,24
+13-03-2020,0.501,factory_outage,lockdown; delay,-0.037,24
+14-03-2020,0.504,shortage,shortage,-0.27,25
+15-03-2020,0.11,none,,-0.055,25
+16-03-2020,0.496,factory_outage,lockdown,-0.249,25
+17-03-2020,0.5,natural_disaster,tsunami; sanction,-0.053,25
+18-03-2020,0.556,logistics_delay,lockdown; delayed; delay,-0.202,25
+19-03-2020,0.541,natural_disaster,flood; delay; shortage,-0.113,25
+20-03-2020,0.421,logistics_delay,delayed,-0.014,24
+21-03-2020,0.511,geopolitical,sanction; lockdown,-0.141,25
+22-03-2020,0.11,none,,-0.178,25
+23-03-2020,0.587,factory_outage,lockdown; earthquake; delay,-0.037,25
+24-03-2020,0.098,none,,-0.171,25
+25-03-2020,0.475,factory_outage,lockdown,-0.108,25
+26-03-2020,0.494,factory_outage,lockdown,-0.066,25
+27-03-2020,0.0,none,,0.0,0
+28-03-2020,0.495,geopolitical,sanction,-0.131,25
+29-03-2020,0.559,factory_outage,lockdown,-0.31,24
+30-03-2020,0.524,factory_outage,lockdown,-0.138,25
+31-03-2020,0.542,factory_outage,lockdown,-0.127,24
+01-04-2020,0.551,factory_outage,lockdown,-0.206,24
+02-04-2020,0.548,factory_outage,lockdown; border closure,-0.073,25
+03-04-2020,0.116,none,,-0.127,25
+04-04-2020,0.551,logistics_delay,delayed; tariff; lockdown,-0.315,25
+05-04-2020,0.086,none,,0.104,23
+06-04-2020,0.487,geopolitical,export ban,-0.193,25
+07-04-2020,0.552,factory_outage,lockdown; sanction,-0.097,25
+08-04-2020,0.512,geopolitical,sanction,-0.164,23
+09-04-2020,0.497,factory_outage,lockdown,-0.158,25
+10-04-2020,0.123,none,,-0.192,25
+11-04-2020,0.508,geopolitical,sanction; lockdown,0.001,23
+12-04-2020,0.51,factory_outage,lockdown,-0.066,25
+13-04-2020,0.502,factory_outage,lockdown,0.011,25
+14-04-2020,0.0,none,,0.0,0
+15-04-2020,0.51,factory_outage,lockdown,-0.122,23
+16-04-2020,0.0,none,,0.0,0
+17-04-2020,0.536,factory_outage,lockdown,-0.165,25
+18-04-2020,0.522,factory_outage,lockdown,0.002,24
+19-04-2020,0.528,factory_outage,lockdown,-0.327,24
+20-04-2020,0.186,none,,-0.12,25
+21-04-2020,0.082,none,,-0.014,24
+22-04-2020,0.536,factory_outage,lockdown,-0.069,25
+23-04-2020,0.172,none,,-0.031,25
+24-04-2020,0.509,shortage,shortage,-0.185,25
+25-04-2020,0.525,factory_outage,lockdown,-0.072,24
+26-04-2020,0.545,factory_outage,lockdown; delay; cyclone,0.008,25
+27-04-2020,0.503,logistics_delay,supply chain; lockdown,0.04,24
+28-04-2020,0.557,factory_outage,lockdown; supply chain; sanction,-0.055,25
+29-04-2020,0.402,logistics_delay,supply chain,-0.112,25
+30-04-2020,0.499,factory_outage,lockdown,-0.269,25
+01-05-2020,0.519,factory_outage,lockdown; scarcity,-0.097,21
+02-05-2020,0.132,none,,-0.268,23
+03-05-2020,0.48,factory_outage,lockdown,-0.027,24
+04-05-2020,0.515,factory_outage,lockdown,-0.146,24
+05-05-2020,0.513,factory_outage,lockdown; tariff,-0.127,25
+06-05-2020,0.527,factory_outage,lockdown,-0.091,24
+07-05-2020,0.509,shortage,shortage,-0.019,24
+08-05-2020,0.085,none,,-0.065,25
+09-05-2020,0.545,logistics_delay,delay; tariff; trade war,-0.137,24
+10-05-2020,0.513,natural_disaster,storm,-0.271,25
+11-05-2020,0.114,none,,-0.073,25
+12-05-2020,0.403,logistics_delay,delay,-0.048,24
+13-05-2020,0.531,geopolitical,invasion; lockdown,-0.224,24
+14-05-2020,0.126,none,,-0.1,24
+15-05-2020,0.559,natural_disaster,earthquake; trade war; lockdown,-0.012,24
+16-05-2020,0.518,factory_outage,lockdown,-0.045,25
+17-05-2020,0.107,none,,-0.086,22
+18-05-2020,0.121,none,,-0.211,25
+19-05-2020,0.108,none,,-0.111,24
+20-05-2020,0.526,natural_disaster,cyclone; lockdown,-0.162,24
+21-05-2020,0.53,natural_disaster,flooding,-0.317,25
+22-05-2020,0.486,factory_outage,lockdown,-0.154,24
+23-05-2020,0.471,factory_outage,lockdown,-0.033,25
+24-05-2020,0.561,natural_disaster,earthquake,-0.154,24
+25-05-2020,0.13,none,,-0.05,24
+26-05-2020,0.548,factory_outage,lockdown; sanction,-0.195,25
+27-05-2020,0.523,geopolitical,invasion; sanction; lockdown,-0.09,25
+28-05-2020,0.524,factory_outage,lockdown; storm,-0.195,24
+29-05-2020,0.09,none,,-0.215,24
+30-05-2020,0.577,factory_outage,lockdown; sanction; wildfire,-0.113,25
+31-05-2020,0.116,none,,-0.324,24
+01-06-2020,0.107,none,,-0.304,24
+02-06-2020,0.102,none,,-0.325,24
+03-06-2020,0.111,none,,-0.286,25
+04-06-2020,0.112,none,,-0.187,25
+05-06-2020,0.144,none,,-0.147,25
+06-06-2020,0.522,factory_outage,lockdown,-0.174,23
+07-06-2020,0.0,none,,0.0,0
+08-06-2020,0.089,none,,-0.095,25
+09-06-2020,0.101,none,,-0.247,25
+10-06-2020,0.491,factory_outage,lockdown,-0.19,25
+11-06-2020,0.116,none,,-0.226,25
+12-06-2020,0.542,geopolitical,tariff; sanction,-0.093,24
+13-06-2020,0.102,none,,-0.298,24
+14-06-2020,0.0,none,,0.0,0
+15-06-2020,0.094,none,,-0.219,25
+16-06-2020,0.115,none,,-0.126,24
+17-06-2020,0.475,factory_outage,lockdown,-0.116,24
+18-06-2020,0.098,none,,-0.152,24
+19-06-2020,0.533,geopolitical,tariff,-0.164,25
+20-06-2020,0.532,factory_outage,lockdown,-0.197,25
+21-06-2020,0.511,factory_outage,lockdown; sanction,-0.032,25
+22-06-2020,0.491,factory_outage,lockdown,-0.163,24
+23-06-2020,0.566,natural_disaster,hurricane; earthquake; sanction,-0.122,25
+24-06-2020,0.574,geopolitical,sanction; flooding,-0.268,24
+25-06-2020,0.544,factory_outage,lockdown; flood; flooding,-0.062,24
+26-06-2020,0.536,geopolitical,tariff; trade war,-0.243,24
+27-06-2020,0.102,none,,-0.086,21
+28-06-2020,0.1,none,,-0.009,24
+29-06-2020,0.499,geopolitical,sanction,-0.101,22
+30-06-2020,0.499,natural_disaster,cyclone,-0.221,24
+01-07-2020,0.545,natural_disaster,storm; sanction,-0.158,24
+02-07-2020,0.098,none,,-0.214,24
+03-07-2020,0.082,none,,-0.172,25
+04-07-2020,0.49,factory_outage,lockdown,0.044,22
+05-07-2020,0.104,none,,-0.049,24
+06-07-2020,0.088,none,,-0.098,25
+07-07-2020,0.555,natural_disaster,storm; lockdown,-0.053,25
+08-07-2020,0.103,none,,-0.198,25
+09-07-2020,0.538,geopolitical,sanction,-0.118,25
+10-07-2020,0.099,none,,-0.118,24
+11-07-2020,0.52,logistics_delay,delay; lockdown,-0.113,24
+12-07-2020,0.11,none,,-0.151,25
+13-07-2020,0.479,factory_outage,lockdown,0.032,25
+14-07-2020,0.492,strike_labor,on strike; invasion,-0.087,25
+15-07-2020,0.102,none,,-0.176,24
+16-07-2020,0.08,none,,-0.062,25
+17-07-2020,0.105,none,,-0.076,23
+18-07-2020,0.134,none,,-0.087,24
+19-07-2020,0.076,none,,-0.095,25
+20-07-2020,0.501,geopolitical,sanction,-0.12,25
+21-07-2020,0.465,natural_disaster,storm,-0.081,25
+22-07-2020,0.389,logistics_delay,backlog,-0.128,25
+23-07-2020,0.092,none,,-0.124,25
+24-07-2020,0.548,natural_disaster,flood,-0.121,25
+25-07-2020,0.149,none,,-0.014,25
+26-07-2020,0.526,natural_disaster,flood,-0.087,25
+27-07-2020,0.506,factory_outage,lockdown; delay,-0.088,25
+28-07-2020,0.416,logistics_delay,delay,-0.044,24
+29-07-2020,0.128,none,,-0.048,25
+30-07-2020,0.452,strike_labor,workers strike,0.018,25
+31-07-2020,0.082,none,,0.035,25
+01-08-2020,0.566,natural_disaster,lockdown; wildfire; storm; tariff,-0.029,25
+02-08-2020,0.515,natural_disaster,wildfire,-0.176,25
+03-08-2020,0.515,natural_disaster,hurricane,-0.093,25
+04-08-2020,0.105,none,,-0.023,25
+05-08-2020,0.101,none,,-0.12,24
+06-08-2020,0.49,factory_outage,lockdown,-0.105,25
+07-08-2020,0.483,natural_disaster,drought,-0.188,25
+08-08-2020,0.54,factory_outage,lockdown,0.067,25
+09-08-2020,0.483,natural_disaster,drought,0.042,23
+10-08-2020,0.087,none,,-0.073,23
+11-08-2020,0.091,none,,-0.099,24
+12-08-2020,0.495,geopolitical,trade war,-0.119,25
+13-08-2020,0.514,natural_disaster,hurricane,-0.051,25
+14-08-2020,0.097,none,,-0.068,25
+15-08-2020,0.498,factory_outage,lockdown,-0.24,24
+16-08-2020,0.469,logistics_delay,delay,-0.093,24
+17-08-2020,0.142,none,,-0.147,25
+18-08-2020,0.553,natural_disaster,shortage; earthquake; wildfire,-0.097,23
+19-08-2020,0.506,geopolitical,sanction,-0.008,24
+20-08-2020,0.459,geopolitical,trade war,-0.113,24
+21-08-2020,0.503,geopolitical,tariff; wildfire,-0.09,25
+22-08-2020,0.137,none,,-0.045,25
+23-08-2020,0.099,none,,-0.08,24
+24-08-2020,0.09,none,,-0.034,22
+25-08-2020,0.096,none,,-0.152,23
+26-08-2020,0.0,none,,0.0,0
+27-08-2020,0.095,none,,-0.211,23
+28-08-2020,0.53,natural_disaster,hurricane,-0.04,25
+29-08-2020,0.087,none,,0.008,23
+30-08-2020,0.53,natural_disaster,storm,-0.173,25
+31-08-2020,0.487,geopolitical,sanction,-0.091,25
+01-09-2020,0.0,none,,0.0,0
+02-09-2020,0.435,logistics_delay,delay,-0.124,24
+03-09-2020,0.52,geopolitical,sanction,-0.18,25
+04-09-2020,0.55,natural_disaster,hurricane; blockade; lockdown,-0.184,25
+05-09-2020,0.498,natural_disaster,typhoon; lockdown,0.014,25
+06-09-2020,0.127,none,,-0.294,25
+07-09-2020,0.446,geopolitical,trade war,-0.033,25
+08-09-2020,0.079,none,,-0.099,25
+09-09-2020,0.122,none,,0.043,23
+10-09-2020,0.09,none,,-0.066,25
+11-09-2020,0.104,none,,-0.089,25
+12-09-2020,0.528,natural_disaster,wildfire,0.115,25
+13-09-2020,0.511,factory_outage,lockdown,-0.001,21
+14-09-2020,0.0,none,,0.0,0
+15-09-2020,0.543,strike_labor,on strike; general strike; cyclone; tariff,-0.241,24
+16-09-2020,0.082,none,,-0.098,25
+17-09-2020,0.114,none,,-0.23,25
+18-09-2020,0.508,factory_outage,lockdown,0.062,22
+19-09-2020,0.502,geopolitical,invasion; lockdown,-0.021,25
+20-09-2020,0.084,none,,-0.074,24
+21-09-2020,0.109,none,,-0.149,24
+22-09-2020,0.539,logistics_delay,delayed; wildfire,-0.134,25
+23-09-2020,0.084,none,,0.025,25
+24-09-2020,0.497,natural_disaster,wildfire,-0.024,24
+25-09-2020,0.515,factory_outage,lockdown; sanction; delay,0.063,24
+26-09-2020,0.566,natural_disaster,wildfire; lockdown,0.035,25
+27-09-2020,0.518,factory_outage,lockdown,-0.113,24
+28-09-2020,0.072,none,,-0.021,25
+29-09-2020,0.094,none,,-0.091,25
+30-09-2020,0.484,factory_outage,lockdown,-0.273,24
+01-10-2020,0.082,none,,0.061,23
+02-10-2020,0.507,factory_outage,lockdown,-0.019,25
+03-10-2020,0.516,factory_outage,lockdown,-0.039,23
+04-10-2020,0.135,none,,-0.114,20
+05-10-2020,0.518,natural_disaster,hurricane; storm,0.046,25
+06-10-2020,0.512,natural_disaster,hurricane; storm,0.131,25
+07-10-2020,0.511,natural_disaster,flood,-0.086,25
+08-10-2020,0.567,natural_disaster,flooding; hurricane; storm; sanction,-0.131,25
+09-10-2020,0.121,none,,-0.043,25
+10-10-2020,0.138,none,,-0.099,26
+11-10-2020,0.544,factory_outage,lockdown; blockade,-0.261,24
+12-10-2020,0.098,none,,-0.022,25
+13-10-2020,0.101,none,,-0.212,24
+14-10-2020,0.496,natural_disaster,tsunami,-0.28,23
+15-10-2020,0.476,factory_outage,lockdown,-0.064,23
+16-10-2020,0.495,factory_outage,lockdown,-0.142,25
+17-10-2020,0.14,none,,0.002,25
+18-10-2020,0.417,logistics_delay,delayed,-0.011,25
+19-10-2020,0.559,natural_disaster,earthquake; tsunami; border closure; hurricane; storm,-0.111,25
+20-10-2020,0.52,factory_outage,lockdown,-0.048,26
+21-10-2020,0.12,none,,-0.094,25
+22-10-2020,0.088,none,,-0.194,22
+23-10-2020,0.528,natural_disaster,storm,-0.139,25
+24-10-2020,0.551,geopolitical,sanction; storm,-0.15,25
+25-10-2020,0.102,none,,-0.122,24
+26-10-2020,0.582,factory_outage,lockdown; blockade; sanction,-0.044,24
+27-10-2020,0.41,strike_labor,walkout,-0.062,25
+28-10-2020,0.513,natural_disaster,hurricane,-0.173,25
+29-10-2020,0.118,none,,-0.037,25
+30-10-2020,0.554,factory_outage,lockdown,-0.18,24
+31-10-2020,0.517,factory_outage,lockdown; typhoon; cyclone,0.071,25
+01-11-2020,0.514,factory_outage,lockdown; flooding,0.047,25
+02-11-2020,0.093,none,,-0.273,25
+03-11-2020,0.092,none,,-0.115,25
+04-11-2020,0.084,none,,-0.023,23
+05-11-2020,0.509,geopolitical,border closure; lockdown,-0.049,24
+06-11-2020,0.099,none,,0.04,25
+07-11-2020,0.0,none,,0.0,0
+08-11-2020,0.083,none,,0.1,25
+09-11-2020,0.495,natural_disaster,storm,-0.071,25
+10-11-2020,0.094,none,,0.078,24
+11-11-2020,0.104,none,,-0.11,25
+12-11-2020,0.528,natural_disaster,storm,-0.016,25
+13-11-2020,0.116,none,,-0.094,25
+14-11-2020,0.125,none,,-0.287,25
+15-11-2020,0.085,none,,0.188,25
+16-11-2020,0.496,geopolitical,sanction; supply chain,-0.007,25
+17-11-2020,0.532,geopolitical,sanction; lockdown,0.018,25
+18-11-2020,0.106,none,,-0.082,25
+19-11-2020,0.094,none,,0.092,25
+20-11-2020,0.096,none,,0.123,24
+21-11-2020,0.096,none,,-0.227,24
+22-11-2020,0.479,natural_disaster,flood,-0.102,25
+23-11-2020,0.0,none,,0.0,0
+24-11-2020,0.507,factory_outage,lockdown; delay,-0.162,25
+25-11-2020,0.103,none,,-0.244,24
+26-11-2020,0.094,none,,-0.085,25
+27-11-2020,0.115,none,,0.086,25
+28-11-2020,0.086,none,,-0.083,24
+29-11-2020,0.089,none,,0.137,25
+30-11-2020,0.485,factory_outage,lockdown,0.067,25
+01-12-2020,0.061,none,,0.16,25
+02-12-2020,0.41,strike_labor,general strike,-0.093,25
+03-12-2020,0.066,none,,0.12,25
+04-12-2020,0.485,factory_outage,lockdown,0.007,25
+05-12-2020,0.537,factory_outage,lockdown; storm,-0.051,25
+06-12-2020,0.087,none,,0.086,25
+07-12-2020,0.131,none,,-0.097,25
+08-12-2020,0.096,none,,-0.052,25
+09-12-2020,0.088,none,,-0.071,25
+10-12-2020,0.097,none,,0.043,25
+11-12-2020,0.074,none,,0.147,25
+12-12-2020,0.484,factory_outage,lockdown,-0.052,24
+13-12-2020,0.09,none,,-0.116,25
+14-12-2020,0.083,none,,-0.047,25
+15-12-2020,0.526,factory_outage,lockdown,-0.085,24
+16-12-2020,0.101,none,,-0.065,24
+17-12-2020,0.494,natural_disaster,storm,-0.071,25
+18-12-2020,0.081,none,,-0.041,23
+19-12-2020,0.529,factory_outage,lockdown,0.087,25
+20-12-2020,0.101,none,,0.018,25
+21-12-2020,0.463,factory_outage,lockdown,0.163,25
+22-12-2020,0.097,none,,-0.119,24
+23-12-2020,0.09,none,,-0.038,25
+24-12-2020,0.08,none,,0.036,24
+25-12-2020,0.11,none,,-0.218,25
+26-12-2020,0.09,none,,-0.137,25
+27-12-2020,0.065,none,,0.09,24
+28-12-2020,0.504,natural_disaster,flood,0.065,25
+29-12-2020,0.124,none,,-0.042,25
+30-12-2020,0.11,none,,-0.156,25
+31-12-2020,0.0,none,,0.0,0
+01-01-2021,0.09,none,,0.051,24
+02-01-2021,0.091,none,,-0.142,25
+03-01-2021,0.523,natural_disaster,wildfire; drought,-0.075,25
+04-01-2021,0.094,none,,-0.095,25
+05-01-2021,0.542,factory_outage,lockdown; panic buying; delay,-0.059,21
+06-01-2021,0.0,none,,0.0,0
+07-01-2021,0.088,none,,-0.154,25
+08-01-2021,0.081,none,,-0.1,20
+09-01-2021,0.081,none,,-0.092,25
+10-01-2021,0.538,factory_outage,lockdown; storm,-0.182,18
+11-01-2021,0.094,none,,0.029,25
+12-01-2021,0.083,none,,-0.052,24
+13-01-2021,0.077,none,,-0.005,24
+14-01-2021,0.124,none,,-0.257,24
+15-01-2021,0.081,none,,0.042,25
+16-01-2021,0.106,none,,-0.035,25
+17-01-2021,0.099,none,,-0.067,24
+18-01-2021,0.51,logistics_delay,delay; shortage; lockdown,-0.046,24
+19-01-2021,0.433,shortage,supply crunch,-0.119,24
+20-01-2021,0.092,none,,0.126,25
+21-01-2021,0.463,geopolitical,tariff,-0.052,25
+22-01-2021,0.142,none,,-0.15,24
+23-01-2021,0.444,logistics_delay,delay,-0.131,24
+24-01-2021,0.523,factory_outage,lockdown,0.142,24
+25-01-2021,0.121,none,,-0.277,25
+26-01-2021,0.394,logistics_delay,delay,-0.039,25
+27-01-2021,0.488,geopolitical,trade war,-0.026,25
+28-01-2021,0.506,factory_outage,lockdown,-0.035,24
+29-01-2021,0.09,none,,0.089,25
+30-01-2021,0.458,geopolitical,sanction,-0.031,25
+31-01-2021,0.457,geopolitical,sanction,-0.152,23
+01-02-2021,0.511,geopolitical,sanction,-0.025,25
+02-02-2021,0.081,none,,-0.031,24
+03-02-2021,0.494,geopolitical,sanction,-0.129,25
+04-02-2021,0.0,none,,0.0,0
+05-02-2021,0.074,none,,-0.002,24
+06-02-2021,0.079,none,,-0.2,25
+07-02-2021,0.517,natural_disaster,storm,0.185,25
+08-02-2021,0.512,natural_disaster,flood,-0.101,25
+09-02-2021,0.42,logistics_delay,delayed,-0.099,25
+10-02-2021,0.093,none,,-0.161,25
+11-02-2021,0.09,none,,0.011,25
+12-02-2021,0.106,none,,-0.087,24
+13-02-2021,0.091,none,,0.162,25
+14-02-2021,0.098,none,,-0.223,25
+15-02-2021,0.115,none,,-0.21,25
+16-02-2021,0.513,geopolitical,sanction,-0.155,25
+17-02-2021,0.109,none,,0.032,25
+18-02-2021,0.537,geopolitical,sanction; storm,0.072,25
+19-02-2021,0.541,geopolitical,embargo; storm,-0.051,25
+20-02-2021,0.085,none,,-0.111,24
+21-02-2021,0.49,factory_outage,lockdown,-0.003,23
+22-02-2021,0.399,logistics_delay,delayed,0.015,25
+23-02-2021,0.461,factory_outage,lockdown,-0.013,25
+24-02-2021,0.084,none,,-0.049,25
+25-02-2021,0.1,none,,-0.145,25
+26-02-2021,0.429,logistics_delay,delayed,0.031,25
+27-02-2021,0.092,none,,0.031,25
+28-02-2021,0.079,none,,0.138,24
+01-03-2021,0.083,none,,0.024,25
+02-03-2021,0.476,geopolitical,sanction,0.128,25
+03-03-2021,0.084,none,,0.014,24
+04-03-2021,0.529,natural_disaster,earthquake; tsunami,0.168,25
+05-03-2021,0.095,none,,0.018,25
+06-03-2021,0.413,logistics_delay,delayed,-0.009,25
+07-03-2021,0.099,none,,-0.156,23
+08-03-2021,0.085,none,,-0.074,25
+09-03-2021,0.1,none,,-0.081,25
+10-03-2021,0.472,natural_disaster,earthquake,0.115,25
+11-03-2021,0.091,none,,-0.141,24
+12-03-2021,0.08,none,,0.102,25
+13-03-2021,0.094,none,,-0.041,25
+14-03-2021,0.079,none,,0.195,25
+15-03-2021,0.073,none,,0.122,25
+16-03-2021,0.117,none,,-0.108,23
+17-03-2021,0.494,natural_disaster,earthquake; hurricane,-0.091,25
+18-03-2021,0.489,factory_outage,lockdown,-0.129,25
+19-03-2021,0.086,none,,-0.112,25
+20-03-2021,0.101,none,,-0.152,25
+21-03-2021,0.107,none,,-0.109,25
+22-03-2021,0.475,natural_disaster,flood,0.127,25
+23-03-2021,0.538,geopolitical,sanction,-0.059,25
+24-03-2021,0.526,shortage,shortage; supply chain,-0.206,25
+25-03-2021,0.126,none,,-0.075,25
+26-03-2021,0.51,port_closure,suez canal,-0.063,25
+27-03-2021,0.533,port_closure,suez canal; sanction,-0.265,25
+28-03-2021,0.093,none,,-0.06,25
+29-03-2021,0.069,none,,-0.023,25
+30-03-2021,0.1,none,,-0.099,24
+31-03-2021,0.519,shortage,shortage; delayed,-0.051,25
+01-04-2021,0.079,none,,-0.052,25
+02-04-2021,0.089,none,,-0.11,25
+03-04-2021,0.08,none,,0.036,25
+04-04-2021,0.529,natural_disaster,flood; embargo,-0.044,25
+05-04-2021,0.054,none,,0.082,25
+06-04-2021,0.055,none,,0.107,25
+07-04-2021,0.473,geopolitical,sanction,0.096,25
+08-04-2021,0.099,none,,-0.099,25
+09-04-2021,0.08,none,,-0.062,25
+10-04-2021,0.53,natural_disaster,flooding; cyclone,0.017,24
+11-04-2021,0.086,none,,0.068,25
+12-04-2021,0.487,factory_outage,lockdown,0.114,23
+13-04-2021,0.079,none,,0.018,25
+14-04-2021,0.106,none,,-0.128,24
+15-04-2021,0.549,geopolitical,shortage; invasion; sanction,-0.109,25
+16-04-2021,0.127,none,,0.051,25
+17-04-2021,0.508,logistics_delay,delay; lockdown,-0.189,24
+18-04-2021,0.073,none,,0.214,25
+19-04-2021,0.109,none,,0.017,25
+20-04-2021,0.087,none,,-0.001,24
+21-04-2021,0.097,none,,-0.006,24
+22-04-2021,0.404,logistics_delay,supply chain,-0.068,25
+23-04-2021,0.085,none,,0.07,24
+24-04-2021,0.49,shortage,shortage,-0.129,24
+25-04-2021,0.118,none,,0.01,25
+26-04-2021,0.068,none,,0.013,25
+27-04-2021,0.146,none,,-0.031,23
+28-04-2021,0.089,none,,-0.077,25
+29-04-2021,0.42,logistics_delay,delayed,-0.1,25
+30-04-2021,0.414,logistics_delay,supply chain,-0.014,24
+01-05-2021,0.09,none,,-0.022,25
+02-05-2021,0.503,shortage,shortage,-0.088,25
+03-05-2021,0.098,none,,-0.109,25
+04-05-2021,0.113,none,,0.046,25
+05-05-2021,0.495,geopolitical,embargo,-0.039,25
+06-05-2021,0.118,none,,-0.137,25
+07-05-2021,0.078,none,,0.116,24
+08-05-2021,0.091,none,,-0.027,25
+09-05-2021,0.521,factory_outage,lockdown,0.049,25
+10-05-2021,0.103,none,,0.019,24
+11-05-2021,0.081,none,,-0.078,25
+12-05-2021,0.094,none,,-0.068,24
+13-05-2021,0.481,geopolitical,invasion,-0.26,25
+14-05-2021,0.099,none,,-0.136,25
+15-05-2021,0.431,logistics_delay,delay,0.065,25
+16-05-2021,0.495,factory_outage,lockdown,-0.164,25
+17-05-2021,0.129,none,,-0.249,25
+18-05-2021,0.15,none,,-0.133,25
+19-05-2021,0.487,geopolitical,sanction,-0.11,24
+20-05-2021,0.478,shortage,shortage,-0.047,24
+21-05-2021,0.087,none,,-0.056,25
+22-05-2021,0.078,none,,0.127,25
+23-05-2021,0.072,none,,0.072,24
+24-05-2021,0.523,natural_disaster,cyclone; sanction,-0.012,23
+25-05-2021,0.099,none,,-0.145,24
+26-05-2021,0.098,none,,-0.024,25
+27-05-2021,0.459,shortage,shortage,-0.012,25
+28-05-2021,0.503,factory_outage,lockdown; delay,-0.056,25
+29-05-2021,0.496,shortage,shortage,-0.113,24
+30-05-2021,0.126,none,,-0.093,24
+31-05-2021,0.158,none,,-0.009,25
+01-06-2021,0.111,none,,-0.174,24
+02-06-2021,0.136,none,,-0.034,24
+03-06-2021,0.085,none,,-0.029,25
+04-06-2021,0.096,none,,-0.181,25
+05-06-2021,0.49,natural_disaster,flood,-0.096,24
+06-06-2021,0.47,factory_outage,lockdown,-0.051,25
+07-06-2021,0.08,none,,-0.049,25
+08-06-2021,0.078,none,,0.075,25
+09-06-2021,0.077,none,,-0.087,25
+10-06-2021,0.105,none,,-0.099,23
+11-06-2021,0.482,shortage,shortage,-0.123,25
+12-06-2021,0.109,none,,0.034,25
+13-06-2021,0.078,none,,-0.091,25
+14-06-2021,0.088,none,,-0.08,25
+15-06-2021,0.084,none,,0.035,25
+16-06-2021,0.094,none,,-0.173,25
+17-06-2021,0.071,none,,0.178,25
+18-06-2021,0.503,natural_disaster,flooding,-0.189,25
+19-06-2021,0.123,none,,-0.124,25
+20-06-2021,0.558,natural_disaster,lockdown; flooding; shortage; storm,0.012,25
+21-06-2021,0.491,geopolitical,sanction; delay; backlog,0.076,25
+22-06-2021,0.088,none,,-0.093,25
+23-06-2021,0.111,none,,-0.17,25
+24-06-2021,0.091,none,,0.07,25
+25-06-2021,0.08,none,,-0.034,25
+26-06-2021,0.469,natural_disaster,storm,-0.006,25
+27-06-2021,0.096,none,,-0.003,25
+28-06-2021,0.086,none,,0.02,24
+29-06-2021,0.507,shortage,shortage,0.001,25
+30-06-2021,0.109,none,,-0.138,25
+01-07-2021,0.546,natural_disaster,wildfire; lockdown; sanction,-0.142,24
+02-07-2021,0.1,none,,-0.2,23
+03-07-2021,0.13,none,,-0.312,24
+04-07-2021,0.099,none,,-0.034,23
+05-07-2021,0.108,none,,-0.255,25
+06-07-2021,0.494,factory_outage,lockdown,-0.039,25
+07-07-2021,0.53,port_closure,container ship; suez canal; ever given,-0.001,25
+08-07-2021,0.508,shortage,shortage; delay,0.006,25
+09-07-2021,0.486,factory_outage,factory fire,-0.403,25
+10-07-2021,0.093,none,,0.004,25
+11-07-2021,0.102,none,,0.084,23
+12-07-2021,0.49,geopolitical,sanction,-0.18,23
+13-07-2021,0.492,geopolitical,sanction,-0.164,22
+14-07-2021,0.566,natural_disaster,flooding; storm,-0.16,23
+15-07-2021,0.494,natural_disaster,flooding,-0.181,25
+16-07-2021,0.572,natural_disaster,flood; import ban,-0.088,25
+17-07-2021,0.497,natural_disaster,flood,-0.053,25
+18-07-2021,0.125,none,,-0.198,23
+19-07-2021,0.08,none,,-0.048,25
+20-07-2021,0.142,none,,-0.101,23
+21-07-2021,0.093,none,,-0.191,23
+22-07-2021,0.084,none,,-0.098,24
+23-07-2021,0.543,geopolitical,sanction,-0.224,25
+24-07-2021,0.111,none,,-0.171,25
+25-07-2021,0.513,factory_outage,lockdown,-0.026,23
+26-07-2021,0.526,factory_outage,lockdown; wildfire,0.005,24
+27-07-2021,0.094,none,,-0.124,24
+28-07-2021,0.107,none,,-0.15,23
+29-07-2021,0.491,geopolitical,sanction,-0.07,25
+30-07-2021,0.545,natural_disaster,wildfire,-0.215,25
+31-07-2021,0.106,none,,-0.198,25
+01-08-2021,0.137,none,,-0.188,24
+02-08-2021,0.565,natural_disaster,wildfire; lockdown; typhoon,-0.012,24
+03-08-2021,0.592,natural_disaster,lockdown; flood; wildfire,-0.239,24
+04-08-2021,0.575,natural_disaster,wildfire; lockdown,-0.224,25
+05-08-2021,0.087,none,,0.005,25
+06-08-2021,0.505,geopolitical,sanction; wildfire,-0.16,24
+07-08-2021,0.489,natural_disaster,storm,-0.168,25
+08-08-2021,0.51,geopolitical,invasion,-0.161,24
+09-08-2021,0.0,none,,0.0,0
+10-08-2021,0.515,natural_disaster,wildfire,-0.114,24
+11-08-2021,0.104,none,,-0.044,24
+12-08-2021,0.086,none,,-0.016,24
+13-08-2021,0.552,geopolitical,sanction,-0.215,24
+14-08-2021,0.539,geopolitical,border closure; wildfire,-0.175,24
+15-08-2021,0.54,natural_disaster,earthquake,-0.065,24
+16-08-2021,0.527,shortage,shortage; flood,-0.059,24
+17-08-2021,0.481,natural_disaster,hurricane,0.075,25
+18-08-2021,0.084,none,,0.047,25
+19-08-2021,0.121,none,,-0.212,24
+20-08-2021,0.089,none,,0.02,24
+21-08-2021,0.543,natural_disaster,wildfire; hurricane,-0.244,23
+22-08-2021,0.578,natural_disaster,storm; shortage; earthquake,-0.132,23
+23-08-2021,0.0,none,,0.0,0
+24-08-2021,0.098,none,,-0.06,24
+25-08-2021,0.489,factory_outage,lockdown,-0.15,24
+26-08-2021,0.112,none,,-0.183,24
+27-08-2021,0.096,none,,0.006,25
+28-08-2021,0.491,natural_disaster,hurricane,0.032,23
+29-08-2021,0.514,natural_disaster,hurricane; storm,-0.073,25
+30-08-2021,0.516,natural_disaster,hurricane,-0.155,21
+31-08-2021,0.091,none,,-0.1,23
+01-09-2021,0.081,none,,-0.089,25
+02-09-2021,0.417,logistics_delay,delayed,-0.02,25
+03-09-2021,0.476,geopolitical,invasion,-0.171,25
+04-09-2021,0.491,natural_disaster,hurricane,-0.119,24
+05-09-2021,0.109,none,,-0.165,25
+06-09-2021,0.14,none,,-0.007,25
+07-09-2021,0.087,none,,-0.005,24
+08-09-2021,0.098,none,,-0.037,25
+09-09-2021,0.476,natural_disaster,typhoon,0.065,25
+10-09-2021,0.092,none,,0.027,22
+11-09-2021,0.093,none,,-0.257,22
+12-09-2021,0.515,natural_disaster,storm,0.038,21
+13-09-2021,0.536,natural_disaster,storm,-0.101,20
+14-09-2021,0.494,shortage,shortage,-0.021,20
+15-09-2021,0.101,none,,-0.135,23
+16-09-2021,0.086,none,,-0.117,23
+17-09-2021,0.087,none,,0.044,22
+18-09-2021,0.115,none,,-0.165,24
+19-09-2021,0.0,none,,0.0,0
+20-09-2021,0.442,logistics_delay,delay,-0.012,23
+21-09-2021,0.627,natural_disaster,earthquake,-0.026,20
+22-09-2021,0.502,factory_outage,lockdown,-0.227,22
+23-09-2021,0.078,none,,0.013,24
+24-09-2021,0.101,none,,0.143,23
+25-09-2021,0.551,natural_disaster,storm; shortage; on strike,-0.074,20
+26-09-2021,0.506,shortage,shortage,-0.042,21
+27-09-2021,0.522,natural_disaster,hurricane; storm,0.052,21
+28-09-2021,0.113,none,,-0.215,24
+29-09-2021,0.086,none,,0.279,20
+30-09-2021,0.085,none,,-0.169,24
+01-10-2021,0.099,none,,-0.112,25
+02-10-2021,0.518,shortage,shortage; lockdown,-0.058,25
+03-10-2021,0.106,none,,-0.137,23
+04-10-2021,0.093,none,,-0.205,21
+05-10-2021,0.108,none,,-0.101,22
+06-10-2021,0.088,none,,-0.152,21
+07-10-2021,0.533,shortage,shortage,-0.051,20
+08-10-2021,0.11,none,,0.049,22
+09-10-2021,0.114,none,,-0.131,23
+10-10-2021,0.525,natural_disaster,hurricane; storm,0.099,22
+11-10-2021,0.097,none,,0.004,20
+12-10-2021,0.09,none,,-0.109,21
+13-10-2021,0.116,none,,-0.241,22
+14-10-2021,0.48,natural_disaster,flood,-0.045,22
+15-10-2021,0.094,none,,0.147,24
+16-10-2021,0.495,natural_disaster,wildfire,-0.096,21
+17-10-2021,0.526,natural_disaster,flood,-0.09,22
+18-10-2021,0.54,geopolitical,invasion,-0.202,17
+19-10-2021,0.142,none,,-0.082,20
+20-10-2021,0.079,none,,0.013,18
+21-10-2021,0.513,port_closure,blockade,0.074,18
+22-10-2021,0.528,natural_disaster,storm,-0.172,24
+23-10-2021,0.08,none,,-0.134,21
+24-10-2021,0.093,none,,-0.053,22
+25-10-2021,0.515,natural_disaster,wildfire,-0.314,23
+26-10-2021,0.097,none,,-0.1,22
+27-10-2021,0.085,none,,-0.094,17
+28-10-2021,0.091,none,,0.058,19
+29-10-2021,0.085,none,,-0.012,24
+30-10-2021,0.459,logistics_delay,delay,-0.055,21
+31-10-2021,0.105,none,,-0.269,19
+01-11-2021,0.484,natural_disaster,drought; tariff,-0.042,25
+02-11-2021,0.093,none,,-0.12,25
+03-11-2021,0.102,none,,-0.124,25
+04-11-2021,0.479,natural_disaster,storm,-0.098,25
+05-11-2021,0.496,natural_disaster,flood,-0.108,24
+06-11-2021,0.093,none,,-0.176,25
+07-11-2021,0.549,natural_disaster,storm; sanction,-0.087,24
+08-11-2021,0.105,none,,-0.107,24
+09-11-2021,0.089,none,,-0.068,24
+10-11-2021,0.078,none,,0.145,25
+11-11-2021,0.494,factory_outage,lockdown,-0.175,25
+12-11-2021,0.091,none,,0.01,22
+13-11-2021,0.5,factory_outage,lockdown,-0.26,25
+14-11-2021,0.568,factory_outage,lockdown; storm,-0.205,25
+15-11-2021,0.552,factory_outage,lockdown; sanction,-0.172,25
+16-11-2021,0.501,natural_disaster,flood; sanction,-0.057,25
+17-11-2021,0.136,none,,-0.298,25
+18-11-2021,0.086,none,,-0.088,25
+19-11-2021,0.488,natural_disaster,flood,-0.101,25
+20-11-2021,0.514,natural_disaster,flood,-0.287,23
+21-11-2021,0.473,logistics_delay,delay; container ship,-0.091,25
+22-11-2021,0.532,shortage,shortage; invasion,-0.189,25
+23-11-2021,0.525,factory_outage,lockdown,-0.155,25
+24-11-2021,0.086,none,,-0.157,23
+25-11-2021,0.154,none,,-0.072,18
+26-11-2021,0.089,none,,-0.047,15
+27-11-2021,0.132,none,,-0.103,21
+28-11-2021,0.538,shortage,shortage; sanction,-0.026,20
+29-11-2021,0.078,none,,-0.08,22
+30-11-2021,0.49,geopolitical,sanction,-0.158,23
+01-12-2021,0.089,none,,-0.018,23
+02-12-2021,0.533,natural_disaster,flood; supply chain,-0.071,24
+03-12-2021,0.088,none,,-0.103,23
+04-12-2021,0.079,none,,-0.083,19
+05-12-2021,0.113,none,,-0.159,21
+06-12-2021,0.53,shortage,shortage,-0.152,19
+07-12-2021,0.515,natural_disaster,flood; earthquake,0.019,21
+08-12-2021,0.49,geopolitical,invasion,-0.107,23
+09-12-2021,0.106,none,,-0.225,20
+10-12-2021,0.09,none,,-0.267,20
+11-12-2021,0.585,geopolitical,sanction; shortage,-0.218,24
+12-12-2021,0.136,none,,0.015,22
+13-12-2021,0.074,none,,0.027,23
+14-12-2021,0.11,none,,-0.154,18
+15-12-2021,0.503,natural_disaster,storm,-0.109,20
+16-12-2021,0.544,geopolitical,sanction; tariff,-0.211,20
+17-12-2021,0.0,none,,0.0,0
+18-12-2021,0.497,natural_disaster,drought,-0.092,23
+19-12-2021,0.105,none,,-0.125,16
+20-12-2021,0.537,natural_disaster,typhoon,-0.398,22
+21-12-2021,0.536,logistics_delay,delay; typhoon,-0.232,20
+22-12-2021,0.469,factory_outage,lockdown,-0.136,21
+23-12-2021,0.121,none,,-0.005,20
+24-12-2021,0.088,none,,-0.117,19
+25-12-2021,0.567,factory_outage,lockdown; invasion,-0.222,22
+26-12-2021,0.554,natural_disaster,flood,-0.012,19
+27-12-2021,0.109,none,,-0.228,18
+28-12-2021,0.086,none,,-0.093,18
+29-12-2021,0.48,natural_disaster,tsunami,-0.119,18
+30-12-2021,0.513,natural_disaster,flood,-0.159,18
+31-12-2021,0.088,none,,0.114,18
+01-01-2022,0.092,none,,0.011,25
+02-01-2022,0.54,natural_disaster,flooding; storm,-0.219,25
+03-01-2022,0.0,none,,0.0,0
+04-01-2022,0.492,geopolitical,sanction,-0.114,24
+05-01-2022,0.523,shortage,shortage; chip shortage; factory fire,-0.261,25
+06-01-2022,0.52,factory_outage,lockdown; sanction,-0.165,25
+07-01-2022,0.112,none,,-0.099,25
+08-01-2022,0.113,none,,-0.148,25
+09-01-2022,0.109,none,,-0.294,25
+10-01-2022,0.498,factory_outage,lockdown,-0.099,25
+11-01-2022,0.504,natural_disaster,flooding,-0.043,25
+12-01-2022,0.108,none,,-0.218,24
+13-01-2022,0.132,none,,-0.156,25
+14-01-2022,0.498,geopolitical,invasion,-0.154,25
+15-01-2022,0.546,natural_disaster,tsunami,-0.029,23
+16-01-2022,0.482,geopolitical,invasion,-0.141,25
+17-01-2022,0.524,natural_disaster,tsunami,-0.307,24
+18-01-2022,0.115,none,,-0.069,25
+19-01-2022,0.489,geopolitical,export ban; invasion,-0.127,25
+20-01-2022,0.555,geopolitical,lockdown; tsunami; sanction; invasion,0.072,22
+21-01-2022,0.113,none,,-0.198,25
+22-01-2022,0.534,geopolitical,sanction; invasion,-0.097,25
+23-01-2022,0.563,geopolitical,sanction; earthquake,-0.122,24
+24-01-2022,0.501,geopolitical,invasion,-0.158,24
+25-01-2022,0.499,geopolitical,invasion,-0.221,25
+26-01-2022,0.575,geopolitical,invasion,-0.193,25
+27-01-2022,0.5,geopolitical,invasion,-0.11,25
+28-01-2022,0.498,geopolitical,sanction,-0.141,25
+29-01-2022,0.147,none,,-0.318,25
+30-01-2022,0.518,geopolitical,sanction,-0.065,25
+31-01-2022,0.517,natural_disaster,flood,-0.182,25
+01-02-2022,0.502,shortage,shortage,-0.219,25
+02-02-2022,0.104,none,,-0.087,24
+03-02-2022,0.567,geopolitical,invasion; lockdown,-0.017,25
+04-02-2022,0.11,none,,-0.233,25
+05-02-2022,0.533,geopolitical,invasion; cyclone,-0.237,24
+06-02-2022,0.514,geopolitical,invasion; earthquake,-0.196,24
+07-02-2022,0.1,none,,-0.003,25
+08-02-2022,0.401,logistics_delay,backlog,-0.05,25
+09-02-2022,0.0,none,,0.0,0
+10-02-2022,0.488,port_closure,blockade,-0.094,24
+11-02-2022,0.51,geopolitical,invasion; blockade,-0.122,24
+12-02-2022,0.557,port_closure,blockade; invasion,-0.201,25
+13-02-2022,0.499,geopolitical,invasion,-0.273,25
+14-02-2022,0.521,port_closure,blockade; storm,-0.162,25
+15-02-2022,0.496,geopolitical,invasion,-0.136,25
+16-02-2022,0.5,geopolitical,invasion,-0.1,24
+17-02-2022,0.131,none,,-0.083,23
+18-02-2022,0.507,port_closure,blockade,-0.164,25
+19-02-2022,0.1,none,,-0.258,23
+20-02-2022,0.551,geopolitical,invasion,-0.186,24
+21-02-2022,0.531,natural_disaster,earthquake; sanction,0.017,25
+22-02-2022,0.546,geopolitical,invasion; sanction,0.017,25
+23-02-2022,0.112,none,,-0.083,25
+24-02-2022,0.648,geopolitical,invasion,-0.345,24
+25-02-2022,0.593,geopolitical,sanction; invasion,-0.167,24
+26-02-2022,0.54,geopolitical,invasion,-0.09,23
+27-02-2022,0.562,natural_disaster,flood; invasion,-0.183,18
+28-02-2022,0.64,geopolitical,invasion; sanction,-0.205,20
+01-03-2022,0.557,geopolitical,sanction; invasion,-0.122,17
+02-03-2022,0.631,geopolitical,sanction; invasion; delay,-0.105,24
+03-03-2022,0.575,geopolitical,invasion; sanction,-0.086,24
+04-03-2022,0.57,geopolitical,invasion; sanction,-0.247,25
+05-03-2022,0.566,geopolitical,invasion; sanction,-0.297,24
+06-03-2022,0.569,geopolitical,invasion; shortage; embargo,-0.336,23
+07-03-2022,0.558,geopolitical,sanction; import ban; invasion,-0.203,25
+08-03-2022,0.522,geopolitical,invasion,-0.023,25
+09-03-2022,0.522,geopolitical,invasion,-0.337,25
+10-03-2022,0.552,geopolitical,sanction; invasion,-0.389,24
+11-03-2022,0.0,none,,0.0,0
+12-03-2022,0.515,geopolitical,invasion,-0.199,24
+13-03-2022,0.105,none,,-0.104,25
+14-03-2022,0.508,geopolitical,invasion; sanction,-0.204,25
+15-03-2022,0.587,geopolitical,sanction; invasion,-0.112,24
+16-03-2022,0.534,natural_disaster,earthquake,-0.114,23
+17-03-2022,0.103,none,,-0.108,24
+18-03-2022,0.434,logistics_delay,delay,-0.223,25
+19-03-2022,0.539,geopolitical,invasion,-0.172,25
+20-03-2022,0.516,natural_disaster,flood,-0.113,25
+21-03-2022,0.571,geopolitical,sanction; invasion,-0.183,24
+22-03-2022,0.114,none,,-0.256,25
+23-03-2022,0.098,none,,-0.12,24
+24-03-2022,0.562,geopolitical,sanction; invasion,-0.137,24
+25-03-2022,0.605,geopolitical,sanction; invasion; flood,-0.195,22
+26-03-2022,0.498,geopolitical,invasion,-0.193,25
+27-03-2022,0.513,geopolitical,sanction; invasion,-0.116,23
+28-03-2022,0.109,none,,-0.02,25
+29-03-2022,0.087,none,,-0.135,25
+30-03-2022,0.508,geopolitical,sanction,-0.033,25
+31-03-2022,0.516,natural_disaster,storm,-0.143,25
+01-04-2022,0.494,geopolitical,invasion,-0.107,25
+02-04-2022,0.547,geopolitical,sanction; invasion; shortage,-0.166,24
+03-04-2022,0.537,geopolitical,sanction,-0.191,24
+04-04-2022,0.533,geopolitical,sanction; invasion,-0.114,25
+05-04-2022,0.506,geopolitical,sanction,-0.229,24
+06-04-2022,0.553,shortage,shortage; scarcity; sanction,-0.134,23
+07-04-2022,0.554,shortage,shortage; delay; sanction,-0.196,25
+08-04-2022,0.132,none,,-0.111,25
+09-04-2022,0.494,geopolitical,invasion,-0.185,25
+10-04-2022,0.554,natural_disaster,storm; invasion; shortage,-0.181,25
+11-04-2022,0.133,none,,-0.374,25
+12-04-2022,0.517,factory_outage,lockdown,-0.198,24
+13-04-2022,0.127,none,,-0.262,25
+14-04-2022,0.53,natural_disaster,flood; invasion,-0.082,24
+15-04-2022,0.522,geopolitical,invasion; sanction,-0.029,24
+16-04-2022,0.527,geopolitical,invasion,-0.172,25
+17-04-2022,0.495,geopolitical,sanction,-0.071,25
+18-04-2022,0.079,none,,-0.098,25
+19-04-2022,0.513,logistics_delay,delay; invasion,-0.246,25
+20-04-2022,0.507,geopolitical,invasion,-0.174,25
+21-04-2022,0.511,shortage,shortage,-0.137,25
+22-04-2022,0.506,geopolitical,sanction; embargo,-0.048,25
+23-04-2022,0.599,natural_disaster,storm; lockdown; invasion,-0.067,25
+24-04-2022,0.524,factory_outage,lockdown,-0.211,24
+25-04-2022,0.095,none,,-0.188,25
+26-04-2022,0.097,none,,0.001,25
+27-04-2022,0.469,geopolitical,tariff,-0.092,24
+28-04-2022,0.535,natural_disaster,drought; invasion,-0.25,25
+29-04-2022,0.101,none,,-0.11,23
+30-04-2022,0.436,geopolitical,invasion,-0.207,25
+01-05-2022,0.529,geopolitical,sanction,-0.157,25
+02-05-2022,0.582,geopolitical,invasion; flood,-0.121,25
+03-05-2022,0.516,geopolitical,sanction; invasion,-0.115,23
+04-05-2022,0.106,none,,-0.153,24
+05-05-2022,0.554,factory_outage,lockdown; tsunami; delayed,-0.083,25
+06-05-2022,0.554,geopolitical,invasion,-0.077,24
+07-05-2022,0.522,geopolitical,invasion; embargo,-0.065,25
+08-05-2022,0.522,factory_outage,lockdown,-0.064,25
+09-05-2022,0.509,geopolitical,tariff; invasion,-0.084,24
+10-05-2022,0.481,natural_disaster,hurricane,-0.294,25
+11-05-2022,0.09,none,,-0.219,24
+12-05-2022,0.096,none,,-0.236,25
+13-05-2022,0.503,geopolitical,invasion,-0.364,25
+14-05-2022,0.512,geopolitical,sanction,0.127,23
+15-05-2022,0.571,geopolitical,sanction; flood; invasion,-0.09,23
+16-05-2022,0.104,none,,-0.189,24
+17-05-2022,0.505,geopolitical,sanction,-0.247,25
+18-05-2022,0.524,geopolitical,sanction; shortage,-0.106,24
+19-05-2022,0.543,geopolitical,invasion,-0.231,25
+20-05-2022,0.102,none,,-0.142,23
+21-05-2022,0.0,none,,0.0,0
+22-05-2022,0.09,none,,-0.077,25
+23-05-2022,0.593,geopolitical,embargo; invasion; sanction; flooding,-0.169,25
+24-05-2022,0.099,none,,-0.125,25
+25-05-2022,0.51,natural_disaster,storm,-0.098,24
+26-05-2022,0.545,geopolitical,sanction,-0.047,25
+27-05-2022,0.495,geopolitical,sanction,-0.206,25
+28-05-2022,0.477,shortage,shortage,-0.06,25
+29-05-2022,0.106,none,,-0.23,25
+30-05-2022,0.545,geopolitical,embargo; sanction,-0.003,25
+31-05-2022,0.491,factory_outage,lockdown,-0.236,25
+01-06-2022,0.467,geopolitical,invasion,0.052,25
+02-06-2022,0.512,geopolitical,sanction,-0.186,24
+03-06-2022,0.492,geopolitical,sanction,-0.035,24
+04-06-2022,0.119,none,,-0.249,24
+05-06-2022,0.516,geopolitical,invasion,-0.33,25
+06-06-2022,0.473,logistics_delay,delay; on strike,-0.357,25
+07-06-2022,0.54,geopolitical,sanction; shortage,-0.27,24
+08-06-2022,0.428,logistics_delay,delay,-0.086,24
+09-06-2022,0.508,geopolitical,invasion; delay,-0.108,23
+10-06-2022,0.428,logistics_delay,delayed,-0.043,23
+11-06-2022,0.533,shortage,shortage; invasion,-0.035,25
+12-06-2022,0.114,none,,-0.28,24
+13-06-2022,0.528,geopolitical,invasion; sanction,-0.166,23
+14-06-2022,0.533,geopolitical,sanction,-0.217,21
+15-06-2022,0.422,strike_labor,general strike,-0.06,25
+16-06-2022,0.496,geopolitical,sanction,-0.113,23
+17-06-2022,0.564,geopolitical,sanction,-0.104,23
+18-06-2022,0.07,none,,-0.028,25
+19-06-2022,0.0,none,,0.0,0
+20-06-2022,0.488,shortage,shortage,-0.229,25
+21-06-2022,0.598,natural_disaster,drought; sanction; earthquake,-0.368,25
+22-06-2022,0.532,natural_disaster,earthquake,-0.145,23
+23-06-2022,0.141,none,,-0.103,25
+24-06-2022,0.53,geopolitical,invasion,-0.08,25
+25-06-2022,0.133,none,,-0.171,23
+26-06-2022,0.119,none,,-0.234,24
+27-06-2022,0.124,none,,-0.2,23
+28-06-2022,0.487,geopolitical,invasion,-0.091,23
+29-06-2022,0.112,none,,-0.228,24
+30-06-2022,0.556,geopolitical,sanction; wildfire,-0.083,24
+01-07-2022,0.559,natural_disaster,earthquake; hurricane,-0.025,25
+02-07-2022,0.13,none,,-0.273,23
+03-07-2022,0.098,none,,-0.189,25
+04-07-2022,0.512,geopolitical,tariff,-0.148,25
+05-07-2022,0.511,port_closure,blockade,-0.222,25
+06-07-2022,0.136,none,,-0.192,24
+07-07-2022,0.111,none,,-0.086,25
+08-07-2022,0.479,geopolitical,sanction,-0.025,23
+09-07-2022,0.547,natural_disaster,storm; flood,-0.105,22
+10-07-2022,0.073,none,,-0.008,25
+11-07-2022,0.481,geopolitical,invasion,-0.065,25
+12-07-2022,0.101,none,,-0.117,23
+13-07-2022,0.106,none,,-0.192,25
+14-07-2022,0.079,none,,-0.032,24
+15-07-2022,0.0,none,,0.0,0
+16-07-2022,0.621,natural_disaster,storm; wildfire; sanction,-0.215,23
+17-07-2022,0.529,geopolitical,invasion,-0.145,24
+18-07-2022,0.11,none,,-0.239,24
+19-07-2022,0.49,geopolitical,invasion,0.038,25
+20-07-2022,0.523,natural_disaster,wildfire,-0.084,25
+21-07-2022,0.501,geopolitical,invasion,-0.123,25
+22-07-2022,0.097,none,,-0.118,25
+23-07-2022,0.116,none,,0.005,23
+24-07-2022,0.122,none,,-0.131,25
+25-07-2022,0.476,natural_disaster,wildfire,-0.048,25
+26-07-2022,0.487,port_closure,blockade,-0.142,24
+27-07-2022,0.094,none,,-0.167,24
+28-07-2022,0.105,none,,-0.071,25
+29-07-2022,0.131,none,,-0.311,25
+30-07-2022,0.503,natural_disaster,storm,-0.08,25
+31-07-2022,0.111,none,,-0.108,25
+01-08-2022,0.113,none,,-0.304,25
+02-08-2022,0.124,none,,-0.223,25
+03-08-2022,0.484,geopolitical,invasion,-0.139,25
+04-08-2022,0.134,none,,-0.154,25
+05-08-2022,0.576,natural_disaster,drought; invasion,-0.146,25
+06-08-2022,0.505,geopolitical,sanction,-0.135,25
+07-08-2022,0.526,port_closure,blockade; invasion,-0.154,25
+08-08-2022,0.485,geopolitical,invasion,-0.23,25
+09-08-2022,0.124,none,,-0.133,24
+10-08-2022,0.513,geopolitical,invasion; tariff,-0.154,22
+11-08-2022,0.48,geopolitical,sanction,-0.186,23
+12-08-2022,0.535,natural_disaster,drought,-0.177,21
+13-08-2022,0.14,none,,-0.296,25
+14-08-2022,0.107,none,,-0.145,25
+15-08-2022,0.487,factory_outage,lockdown,-0.029,24
+16-08-2022,0.577,natural_disaster,sanction; wildfire; flooding; storm,-0.167,25
+17-08-2022,0.0,none,,0.0,0
+18-08-2022,0.114,none,,-0.149,25
+19-08-2022,0.108,none,,-0.183,23
+20-08-2022,0.494,geopolitical,sanction,-0.329,23
+21-08-2022,0.463,geopolitical,embargo,-0.33,25
+22-08-2022,0.091,none,,-0.239,24
+23-08-2022,0.538,natural_disaster,drought,-0.067,24
+24-08-2022,0.107,none,,-0.255,24
+25-08-2022,0.0,none,,0.0,0
+26-08-2022,0.559,natural_disaster,flood; invasion; flooding,-0.083,24
+27-08-2022,0.091,none,,-0.076,25
+28-08-2022,0.59,natural_disaster,drought; flooding,-0.227,24
+29-08-2022,0.553,natural_disaster,flood; storm,-0.162,25
+30-08-2022,0.494,natural_disaster,flood,-0.131,25
+31-08-2022,0.624,port_closure,suez canal; delayed,-0.158,23
+01-09-2022,0.56,natural_disaster,flood,-0.126,23
+02-09-2022,0.101,none,,-0.218,25
+03-09-2022,0.481,factory_outage,lockdown,-0.197,25
+04-09-2022,0.49,natural_disaster,wildfire,-0.406,24
+05-09-2022,0.11,none,,-0.292,24
+06-09-2022,0.092,none,,-0.146,25
+07-09-2022,0.53,natural_disaster,flooding,-0.278,21
+08-09-2022,0.507,geopolitical,sanction,-0.122,25
+09-09-2022,0.124,none,,0.037,24
+10-09-2022,0.085,none,,-0.11,24
+11-09-2022,0.093,none,,-0.174,21
+12-09-2022,0.0,none,,0.0,0
+13-09-2022,0.488,natural_disaster,flood,-0.109,25
+14-09-2022,0.552,natural_disaster,flood,-0.223,25
+15-09-2022,0.518,natural_disaster,flooding,-0.261,24
+16-09-2022,0.541,natural_disaster,flood; invasion,-0.145,25
+17-09-2022,0.101,none,,-0.106,25
+18-09-2022,0.537,geopolitical,invasion; flood; hurricane,-0.17,25
+19-09-2022,0.635,natural_disaster,earthquake; tsunami; hurricane; flood,-0.245,25
+20-09-2022,0.553,geopolitical,sanction; invasion; earthquake,-0.034,24
+21-09-2022,0.512,geopolitical,invasion; shortage,-0.142,24
+22-09-2022,0.562,natural_disaster,hurricane,-0.208,25
+23-09-2022,0.541,natural_disaster,hurricane; tsunami,-0.231,25
+24-09-2022,0.097,none,,-0.204,25
+25-09-2022,0.524,natural_disaster,storm,-0.113,25
+26-09-2022,0.117,none,,-0.078,25
+27-09-2022,0.096,none,,-0.158,25
+28-09-2022,0.514,natural_disaster,storm,-0.178,23
+29-09-2022,0.568,natural_disaster,hurricane; storm,-0.228,24
+30-09-2022,0.534,natural_disaster,hurricane,-0.11,23
+01-10-2022,0.594,natural_disaster,hurricane; sanction; shortage,-0.424,25
+02-10-2022,0.546,natural_disaster,hurricane; delay,-0.223,24
+03-10-2022,0.146,none,,-0.217,21
+04-10-2022,0.067,none,,-0.174,22
+05-10-2022,0.5,geopolitical,sanction,-0.2,25
+06-10-2022,0.106,none,,-0.246,25
+07-10-2022,0.495,natural_disaster,flood,-0.049,24
+08-10-2022,0.551,natural_disaster,hurricane; storm; invasion,-0.17,25
+09-10-2022,0.434,logistics_delay,delay,-0.303,25
+10-10-2022,0.552,shortage,shortage; invasion; lockdown,-0.046,23
+11-10-2022,0.511,geopolitical,sanction,-0.211,25
+12-10-2022,0.103,none,,-0.1,25
+13-10-2022,0.102,none,,-0.141,25
+14-10-2022,0.0,none,,0.0,0
+15-10-2022,0.533,logistics_delay,delay; invasion,-0.392,21
+16-10-2022,0.117,none,,-0.215,25
+17-10-2022,0.518,geopolitical,sanction,-0.15,23
+18-10-2022,0.128,none,,-0.152,23
+19-10-2022,0.514,geopolitical,invasion,-0.108,25
+20-10-2022,0.407,logistics_delay,supply chain,-0.202,25
+21-10-2022,0.511,port_closure,blockade,-0.079,25
+22-10-2022,0.507,natural_disaster,flooding,-0.146,25
+23-10-2022,0.57,geopolitical,invasion; drought,-0.289,24
+24-10-2022,0.102,none,,-0.165,25
+25-10-2022,0.564,natural_disaster,earthquake; sanction,-0.187,25
+26-10-2022,0.559,natural_disaster,delay; cyclone; flood; storm,-0.245,25
+27-10-2022,0.508,natural_disaster,hurricane,-0.144,25
+28-10-2022,0.526,natural_disaster,flood,-0.087,24
+29-10-2022,0.54,shortage,shortage; lockdown,-0.198,23
+30-10-2022,0.086,none,,0.195,21
+31-10-2022,0.529,port_closure,blockade; invasion,-0.184,25
+01-11-2022,0.501,geopolitical,sanction,-0.112,24
+02-11-2022,0.53,port_closure,blockade,-0.048,23
+03-11-2022,0.49,geopolitical,invasion,-0.223,25
+04-11-2022,0.531,natural_disaster,drought,-0.096,25
+05-11-2022,0.107,none,,-0.272,24
+06-11-2022,0.468,factory_outage,lockdown,-0.171,25
+07-11-2022,0.54,natural_disaster,storm; sanction,-0.06,25
+08-11-2022,0.099,none,,-0.082,25
+09-11-2022,0.09,none,,-0.092,25
+10-11-2022,0.113,none,,-0.127,25
+11-11-2022,0.464,geopolitical,sanction,0.101,23
+12-11-2022,0.549,natural_disaster,storm; shortage,-0.143,25
+13-11-2022,0.1,none,,-0.009,25
+14-11-2022,0.093,none,,-0.151,20
+15-11-2022,0.092,none,,-0.121,25
+16-11-2022,0.581,natural_disaster,storm; earthquake; flood,-0.151,25
+17-11-2022,0.111,none,,-0.151,25
+18-11-2022,0.132,none,,-0.272,25
+19-11-2022,0.114,none,,-0.318,23
+20-11-2022,0.0,none,,0.0,0
+21-11-2022,0.546,natural_disaster,earthquake,-0.211,24
+22-11-2022,0.484,geopolitical,sanction,-0.029,24
+23-11-2022,0.547,geopolitical,invasion; sanction,-0.219,25
+24-11-2022,0.119,none,,-0.263,25
+25-11-2022,0.533,factory_outage,lockdown,-0.083,20
+26-11-2022,0.13,none,,-0.022,25
+27-11-2022,0.501,natural_disaster,storm,-0.141,24
+28-11-2022,0.095,none,,-0.196,24
+29-11-2022,0.071,none,,0.08,25
+30-11-2022,0.434,logistics_delay,delay,-0.163,25
+01-12-2022,0.49,geopolitical,sanction,-0.14,25
+02-12-2022,0.467,geopolitical,tariff,-0.168,25
+03-12-2022,0.098,none,,-0.18,25
+04-12-2022,0.119,none,,-0.251,24
+05-12-2022,0.114,none,,-0.232,24
+06-12-2022,0.484,geopolitical,sanction,-0.212,25
+07-12-2022,0.52,geopolitical,invasion,-0.203,25
+08-12-2022,0.51,geopolitical,invasion,-0.158,25
+09-12-2022,0.522,geopolitical,invasion,-0.104,25
+10-12-2022,0.109,none,,-0.206,24
+11-12-2022,0.427,logistics_delay,supply chain,-0.136,24
+12-12-2022,0.53,geopolitical,sanction; backlog,-0.307,24
+13-12-2022,0.536,geopolitical,sanction,0.02,25
+14-12-2022,0.456,logistics_delay,delay,-0.241,25
+15-12-2022,0.513,natural_disaster,storm,-0.167,25
+16-12-2022,0.487,geopolitical,invasion,-0.097,25
+17-12-2022,0.49,geopolitical,sanction,-0.221,25
+18-12-2022,0.483,geopolitical,invasion,-0.152,25
+19-12-2022,0.095,none,,-0.276,25
+20-12-2022,0.48,geopolitical,invasion,-0.178,24
+21-12-2022,0.083,none,,-0.076,25
+22-12-2022,0.0,none,,0.0,0
+23-12-2022,0.17,none,,-0.145,25
+24-12-2022,0.086,none,,-0.026,24
+25-12-2022,0.446,logistics_delay,delay,-0.303,25
+26-12-2022,0.15,none,,-0.142,24
+27-12-2022,0.542,port_closure,blockade,-0.238,24
+28-12-2022,0.097,none,,-0.122,25
+29-12-2022,0.532,port_closure,blockade,-0.29,24
+30-12-2022,0.512,natural_disaster,flooding; suez canal,-0.217,25
+31-12-2022,0.126,none,,-0.184,25
+01-01-2023,0.098,none,,-0.136,25
+02-01-2023,0.087,none,,-0.166,25
+03-01-2023,0.487,shortage,shortage,-0.244,25
+04-01-2023,0.154,none,,-0.165,25
+05-01-2023,0.109,none,,-0.093,25
+06-01-2023,0.552,geopolitical,storm; invasion; sanction,-0.063,23
+07-01-2023,0.517,geopolitical,sanction,-0.207,25
+08-01-2023,0.583,natural_disaster,storm; blockade; invasion; flood,-0.163,25
+09-01-2023,0.102,none,,-0.176,23
+10-01-2023,0.541,natural_disaster,flooding; storm,-0.191,25
+11-01-2023,0.569,geopolitical,invasion; flood,-0.148,25
+12-01-2023,0.111,none,,-0.097,24
+13-01-2023,0.106,none,,-0.108,25
+14-01-2023,0.496,port_closure,blockade,-0.067,25
+15-01-2023,0.109,none,,-0.192,25
+16-01-2023,0.076,none,,-0.009,24
+17-01-2023,0.434,geopolitical,tariff,-0.126,25
+18-01-2023,0.087,none,,-0.094,25
+19-01-2023,0.462,geopolitical,sanction,-0.055,24
+20-01-2023,0.121,none,,-0.274,25
+21-01-2023,0.102,none,,-0.207,25
+22-01-2023,0.096,none,,-0.175,25
+23-01-2023,0.106,none,,-0.191,25
+24-01-2023,0.125,none,,-0.12,23
+25-01-2023,0.496,shortage,shortage,-0.29,25
+26-01-2023,0.523,natural_disaster,drought; sanction,-0.247,24
+27-01-2023,0.506,natural_disaster,flooding,-0.214,25
+28-01-2023,0.165,none,,-0.18,25
+29-01-2023,0.482,geopolitical,export ban,-0.229,25
+30-01-2023,0.097,none,,-0.101,24
+31-01-2023,0.089,none,,-0.098,25
+01-02-2023,0.105,none,,-0.105,23
+02-02-2023,0.1,none,,-0.054,23
+03-02-2023,0.086,none,,-0.06,22
+04-02-2023,0.0,none,,0.0,0
+05-02-2023,0.526,geopolitical,tariff; wildfire,-0.073,25
+06-02-2023,0.596,natural_disaster,earthquake,-0.071,24
+07-02-2023,0.624,natural_disaster,earthquake,-0.2,24
+08-02-2023,0.552,natural_disaster,earthquake; wildfire,-0.163,21
+09-02-2023,0.542,natural_disaster,earthquake; sanction,-0.142,23
+10-02-2023,0.594,natural_disaster,earthquake; sanction,-0.069,25
+11-02-2023,0.518,natural_disaster,earthquake,-0.195,23
+12-02-2023,0.509,geopolitical,sanction; invasion,-0.138,25
+13-02-2023,0.0,none,,0.0,0
+14-02-2023,0.554,natural_disaster,flood; cyclone; storm,-0.21,24
+15-02-2023,0.566,natural_disaster,cyclone; storm; scarcity,-0.308,25
+16-02-2023,0.547,geopolitical,sanction; storm,-0.32,25
+17-02-2023,0.553,natural_disaster,storm; flood,-0.144,25
+18-02-2023,0.562,natural_disaster,earthquake; sanction,-0.183,25
+19-02-2023,0.42,logistics_delay,backlog,-0.151,24
+20-02-2023,0.523,natural_disaster,earthquake,-0.253,24
+21-02-2023,0.551,natural_disaster,earthquake; invasion,-0.203,23
+22-02-2023,0.493,natural_disaster,earthquake,-0.118,23
+23-02-2023,0.575,geopolitical,invasion,-0.32,24
+24-02-2023,0.532,geopolitical,sanction; earthquake,0.028,24
+25-02-2023,0.556,logistics_delay,delay; sanction,-0.124,24
+26-02-2023,0.488,natural_disaster,storm,-0.156,25
+27-02-2023,0.499,natural_disaster,drought,-0.181,24
+28-02-2023,0.102,none,,-0.345,23
+01-03-2023,0.0,none,,0.0,0
+02-03-2023,0.101,none,,-0.288,24
+03-03-2023,0.527,natural_disaster,earthquake; cyclone; sanction; invasion,-0.238,25
+04-03-2023,0.524,natural_disaster,hurricane; cyclone,-0.228,23
+05-03-2023,0.099,none,,-0.243,23
+06-03-2023,0.489,geopolitical,invasion,-0.097,24
+07-03-2023,0.089,none,,-0.105,25
+08-03-2023,0.086,none,,-0.082,24
+09-03-2023,0.541,geopolitical,sanction; invasion,-0.216,25
+10-03-2023,0.095,none,,-0.152,23
+11-03-2023,0.12,none,,-0.166,25
+12-03-2023,0.49,geopolitical,sanction,-0.128,25
+13-03-2023,0.549,natural_disaster,earthquake; storm,-0.164,25
+14-03-2023,0.563,geopolitical,invasion; flood; sanction,-0.132,25
+15-03-2023,0.535,geopolitical,invasion; storm,-0.12,23
+16-03-2023,0.508,natural_disaster,drought; invasion,-0.176,25
+17-03-2023,0.109,none,,-0.093,25
+18-03-2023,0.577,natural_disaster,earthquake,-0.22,25
+19-03-2023,0.414,logistics_delay,supply chain,-0.254,24
+20-03-2023,0.101,none,,-0.068,25
+21-03-2023,0.078,none,,-0.023,25
+22-03-2023,0.552,natural_disaster,earthquake; delay,-0.063,24
+23-03-2023,0.08,none,,-0.035,24
+24-03-2023,0.106,none,,-0.155,25
+25-03-2023,0.111,none,,-0.308,24
+26-03-2023,0.07,none,,0.04,24
+27-03-2023,0.11,none,,-0.162,25
+28-03-2023,0.094,none,,-0.202,25
+29-03-2023,0.472,geopolitical,sanction,-0.146,25
+30-03-2023,0.073,none,,-0.104,21
+31-03-2023,0.099,none,,-0.209,22
+01-04-2023,0.527,natural_disaster,storm,-0.079,23
+02-04-2023,0.136,none,,-0.273,25
+03-04-2023,0.119,none,,-0.207,25
+04-04-2023,0.542,natural_disaster,earthquake,-0.158,25
+05-04-2023,0.532,natural_disaster,earthquake,-0.215,24
+06-04-2023,0.49,geopolitical,sanction,-0.118,25
+07-04-2023,0.095,none,,-0.142,24
+08-04-2023,0.102,none,,-0.288,24
+09-04-2023,0.53,geopolitical,sanction,-0.208,24
+10-04-2023,0.111,none,,-0.163,24
+11-04-2023,0.097,none,,-0.169,25
+12-04-2023,0.084,none,,-0.099,23
+13-04-2023,0.486,natural_disaster,drought,-0.175,23
+14-04-2023,0.526,geopolitical,invasion,-0.276,25
+15-04-2023,0.108,none,,-0.107,24
+16-04-2023,0.536,natural_disaster,earthquake,-0.181,25
+17-04-2023,0.095,none,,-0.282,21
+18-04-2023,0.104,none,,-0.3,23
+19-04-2023,0.1,none,,-0.198,23
+20-04-2023,0.083,none,,-0.146,23
+21-04-2023,0.072,none,,-0.064,25
+22-04-2023,0.096,none,,-0.179,23
+23-04-2023,0.083,none,,0.006,25
+24-04-2023,0.122,none,,-0.162,22
+25-04-2023,0.077,none,,0.011,25
+26-04-2023,0.093,none,,-0.25,23
+27-04-2023,0.094,none,,-0.109,25
+28-04-2023,0.517,natural_disaster,wildfire,0.015,24
+29-04-2023,0.097,none,,-0.152,25
+30-04-2023,0.507,shortage,shortage,-0.147,24

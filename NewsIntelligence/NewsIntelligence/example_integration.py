@@ -1,9 +1,19 @@
 
+import sys
 from pathlib import Path
 import pandas as pd
-from . import NewsProcessor
 
 PACKAGE_DIR = Path(__file__).resolve().parent
+if str(PACKAGE_DIR.parent) not in sys.path:
+    sys.path.insert(0, str(PACKAGE_DIR.parent))
+if str(PACKAGE_DIR) not in sys.path:
+    sys.path.insert(0, str(PACKAGE_DIR))
+
+try:
+    from . import NewsProcessor
+except (ImportError, ValueError):
+    from NewsIntelligence import NewsProcessor
+
 DATA_PATH = PACKAGE_DIR / "data" / "news_long.csv"   
 OUTPUT_DIR = Path.cwd()
 

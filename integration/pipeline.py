@@ -444,9 +444,22 @@ class IntegrationPipeline:
 
         ew = ExplainableWarning(self.xai_cfg)
 
-        # Fit uncertainty estimator on background data
-        X_bg = ts_features.select_dtypes(include=[np.number]).fillna(0).values
-        y_bg = synthesise_labels(ts_features)
+        # Build multimodal background dataset from warning_outputs for SHAP and Uncertainty
+        bundles = [wo.raw_bundle for wo in warning_outputs if wo.raw_bundle is not None]
+        if bundles:
+            X_all = np.array([b.to_flat_array()[0] for b in bundles])
+            y_all = np.array([int(wo.disruption_probability >= 0.50) for wo in warning_outputs if wo.raw_bundle is not None])
+            if len(np.unique(y_all)) < 2 and len(y_all) > 1:
+                y_all[0] = 1 - y_all[0]
+            rng = np.random.default_rng(42)
+            bg_indices = rng.choice(len(X_all), size=min(100, len(X_all)), replace=False)
+            X_bg = X_all[bg_indices]
+            y_bg = y_all[bg_indices]
+        else:
+            X_bg = ts_features.select_dtypes(include=[np.number]).fillna(0).values[:100]
+            y_bg = synthesise_labels(ts_features)[:100]
+
+        # Fit uncertainty estimator on matching multimodal feature dimensions
         uncertainty_est = EnsembleUncertainty(n_estimators=5)
         ew.fit_uncertainty(uncertainty_est, X_bg, y_bg)
 
@@ -464,6 +477,7 @@ class IntegrationPipeline:
                 report = ew.explain(
                     model, wo, ts_features, news_articles, event_features,
                     uncertainty_estimator=uncertainty_est,
+                    background_data=(X_bg, y_bg),
                 )
                 reports.append(report)
                 logger.info(

@@ -1,6 +1,6 @@
 event_id,event_date,event_type,description,latitude,longitude,severity,source,Event_Severity,node_id,node_name,node_type,distance_km,event_age_days,Infrastructure_Flag,Logistics_Node_Flag,Distance_Impact,Recency_Impact,External_Event_Risk
-EV001,2026-10-20,flood,Flood affecting road infrastructure near distribution hub,28.6139,77.209,high,synthetic_example,0.75,N001,Delhi Distribution Hub,distribution_hub,0.0,1,1,1,1.0,0.9997260273972602,0.7497945205479452
-EV003,2026-10-21,storm,Storm warning near warehouse,26.9124,75.7873,medium,synthetic_example,0.5,N001,Delhi Distribution Hub,distribution_hub,235.291,0,1,1,0.21569666666666665,1.0,0.10784833333333332
-EV002,2026-10-19,geopolitical_strike,Transport strike near regional port,19.076,72.8777,severe,synthetic_example,0.9,N002,Mumbai Port,port,0.0,2,1,1,1.0,0.9994520547945206,0.8995068493150685
-EV003,2026-10-21,storm,Storm warning near warehouse,26.9124,75.7873,medium,synthetic_example,0.5,N003,Jaipur Warehouse,warehouse,0.0,0,1,1,1.0,1.0,0.5
-EV001,2026-10-20,flood,Flood affecting road infrastructure near distribution hub,28.6139,77.209,high,synthetic_example,0.75,N003,Jaipur Warehouse,warehouse,235.291,1,1,1,0.21569666666666665,0.9997260273972602,0.16172817876712328
+EV001,2026-10-20,flood,Flood affecting road infrastructure near distribution hub,28.6139,77.209,high,synthetic_example,0.75,N001,Delhi Distribution Hub,distribution_hub,0.0,6,1,1,1.0,0.9983561643835617,0.7487671232876713
+EV003,2026-10-21,storm,Storm warning near warehouse,26.9124,75.7873,medium,synthetic_example,0.5,N001,Delhi Distribution Hub,distribution_hub,235.291,5,1,1,0.21569666666666665,0.9986301369863013,0.10770059589041095
+EV002,2026-10-19,geopolitical_strike,Transport strike near regional port,19.076,72.8777,severe,synthetic_example,0.9,N002,Mumbai Port,port,0.0,7,1,1,1.0,0.9980821917808219,0.8982739726027398
+EV003,2026-10-21,storm,Storm warning near warehouse,26.9124,75.7873,medium,synthetic_example,0.5,N003,Jaipur Warehouse,warehouse,0.0,5,1,1,1.0,0.9986301369863013,0.49931506849315066
+EV001,2026-10-20,flood,Flood affecting road infrastructure near distribution hub,28.6139,77.209,high,synthetic_example,0.75,N003,Jaipur Warehouse,warehouse,235.291,6,1,1,0.21569666666666665,0.9983561643835617,0.1615065726027397

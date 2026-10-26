@@ -4,40 +4,46 @@
 
 // ── Embedded data from integration pipeline ──────────────
 const ALERTS = [
-  { entity_id:"Supplier A", window_start:"2020-05-28", disruption_probability:0.9995, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2020-06-04", disruption_probability:0.705,  risk_level:"high",     disruption_type:"transport_delay", horizon_class:"short_term", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-01-20", disruption_probability:0.9459, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-02-03", disruption_probability:0.9997, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-02-10", disruption_probability:1.0,    risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-03-03", disruption_probability:0.6107, risk_level:"high",     disruption_type:"transport_delay", horizon_class:"short_term", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-03-17", disruption_probability:0.9988, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-03-24", disruption_probability:0.9999, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-03-31", disruption_probability:0.9459, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-04-07", disruption_probability:0.9999, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-04-21", disruption_probability:1.0,    risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-04-28", disruption_probability:0.861,  risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-05-05", disruption_probability:0.9989, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-06-09", disruption_probability:0.5659, risk_level:"medium",  disruption_type:"transport_delay", horizon_class:"medium_term", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-07-14", disruption_probability:0.9018, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-07-28", disruption_probability:0.9982, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-08-04", disruption_probability:0.9997, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-08-18", disruption_probability:1.0,    risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-09-29", disruption_probability:0.97,   risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", evidence_passed:5, consistency_rate:1.0 },
-  { entity_id:"Supplier A", window_start:"2022-10-06", disruption_probability:0.6257, risk_level:"high",     disruption_type:"transport_delay", horizon_class:"short_term", evidence_passed:5, consistency_rate:1.0 },
+  { entity_id:"Supplier A", window_start:"2020-05-28", disruption_probability:0.9995, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2020-06-04", disruption_probability:0.7050, risk_level:"high",     disruption_type:"transport_delay", horizon_class:"short_term", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-01-20", disruption_probability:0.9459, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-02-03", disruption_probability:0.9997, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-02-10", disruption_probability:1.0000, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-03-03", disruption_probability:0.6107, risk_level:"high",     disruption_type:"transport_delay", horizon_class:"short_term", calibrated_probability:0.1965, uncertainty:0.0561, confidence:0.9439, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-03-17", disruption_probability:0.9988, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-03-24", disruption_probability:0.9999, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.1965, uncertainty:0.0561, confidence:0.9439, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-03-31", disruption_probability:0.9459, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-04-07", disruption_probability:0.9999, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-04-21", disruption_probability:1.0000, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-04-28", disruption_probability:0.8610, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.1965, uncertainty:0.0561, confidence:0.9439, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-05-05", disruption_probability:0.9989, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.1965, uncertainty:0.0561, confidence:0.9439, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-06-09", disruption_probability:0.5659, risk_level:"medium",  disruption_type:"transport_delay", horizon_class:"medium_term", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-07-14", disruption_probability:0.9018, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:8, evidence_total:15, consistency_rate:0.533 },
+  { entity_id:"Supplier A", window_start:"2022-07-28", disruption_probability:0.9982, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-08-04", disruption_probability:0.9997, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-08-18", disruption_probability:1.0000, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-09-29", disruption_probability:0.9700, risk_level:"critical", disruption_type:"transport_delay", horizon_class:"immediate", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
+  { entity_id:"Supplier A", window_start:"2022-10-06", disruption_probability:0.6257, risk_level:"high",     disruption_type:"transport_delay", horizon_class:"short_term", calibrated_probability:0.9947, uncertainty:0.0000, confidence:1.0000, share_timeseries:1.0, share_news:0.0, share_events:0.0, evidence_passed:9, evidence_total:15, consistency_rate:0.600 },
 ];
 
 const EVIDENCE_SAMPLES = [
-  { evidence_id:"ev_ecceacaf31", modality:"news", attribution_score:0.953, summary:"[natural_disaster] Iran's Government Criticized For Inaction Against Large Wildfires — disruption signal tied to extreme weather events affecting production routes.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_d0bffa788d", modality:"news", attribution_score:0.900, summary:"[natural_disaster] Virus, heat wave and locusts form perfect storm in India — multi-hazard stacking increases supply chain fragility scores.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_a05b9e5160", modality:"news", attribution_score:0.899, summary:"[factory_outage] Lockdown easing to allow groups of six — factory reopening signals mixed with ongoing capacity restrictions.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_38314ec79b", modality:"news", attribution_score:0.889, summary:"[factory_outage] Coronavirus: Belgian Prince Joachim tests positive after lockdown party — exemplar of continued pandemic disruption to logistics.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_6894ec853b", modality:"news", attribution_score:0.882, summary:"[factory_outage] Lockdown 5.0 live updates: Conduct sero-survey to track Covid spread — broad manufacturing disruption across South Asia.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_abc123def4", modality:"news", attribution_score:0.875, summary:"[geopolitical] Ukraine crisis: UK 'not optimistic' Russian invasion can be stopped — significant geopolitical risk elevating supply chain disruption scores.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_def456ghi7", modality:"news", attribution_score:0.861, summary:"[geopolitical] Australians in Ukraine describe 'two different realities' — war-related port closures and shipping lane disruptions flagged.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_ghi789jkl0", modality:"news", attribution_score:0.840, summary:"[geopolitical] China criticizes US missile sanctions as hypocrisy — bilateral trade tensions elevating material shortage risk.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_jkl012mno3", modality:"news", attribution_score:0.822, summary:"[natural_disaster] Some 10,000 people in northern town evacuated — infrastructure damage causing regional logistics bottleneck.", passed:true, entity:"Supplier A", consistency_score:1.0 },
-  { evidence_id:"ev_mno345pqr6", modality:"news", attribution_score:0.807, summary:"[geopolitical] UK warns Russia will face severe sanctions — pre-conflict geopolitical escalation detected in news risk embedding.", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_81c614bd26", modality:"timeseries", attribution_score:0.1477, summary:"lead_time_risk increases risk (score=+0.1477)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_6c0b803ec1", modality:"timeseries", attribution_score:0.0069, summary:"inventory_risk increases risk (score=+0.0069)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_20e31689ba", modality:"timeseries", attribution_score:0.0012, summary:"rolling_mean_delay increases risk (score=+0.0012)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_ee5484b635", modality:"timeseries", attribution_score:0.0001, summary:"delay_lag_7d increases risk (score=+0.0001)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_ecceacaf31", modality:"news", attribution_score:0.9535, summary:"[['natural_disaster']] Iran's Government Criticized For Inaction Against Large Wildfires (risk_score=0.954)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_d0bffa788d", modality:"news", attribution_score:0.8995, summary:"[['natural_disaster']] Virus, heat wave and locusts form perfect storm in India (risk_score=0.900)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_a05b9e5160", modality:"news", attribution_score:0.8985, summary:"[['factory_outage']] Lockdown easing to allow groups of six to meet (risk_score=0.899)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_38314ec79b", modality:"news", attribution_score:0.8885, summary:"[['factory_outage']] Coronavirus: Belgian Prince Joachim tests positive after lockdown party (risk_score=0.889)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_6894ec853b", modality:"news", attribution_score:0.8815, summary:"[['factory_outage']] Lockdown 5.0 live updates: Conduct sero-survey to track Covid spread, says ICMR (risk_score=0.882)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_4798e06ac5", modality:"news", attribution_score:0.6599, summary:"[['factory_outage']] Lockdown restrictions and quarantine operational disruptions in regional hubs (risk_score=0.936)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_9c80b82a53", modality:"news", attribution_score:0.6211, summary:"[['factory_outage']] In post-lockdown China, logistics and facility recovery monitored (risk_score=0.881)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_b7ef0b472c", modality:"news", attribution_score:0.1502, summary:"[[]] Bolsonaro threatens WHO exit as COVID-19 kills 'a Brazilian per minute' (risk_score=0.213)", passed:true, entity:"Supplier A", consistency_score:1.0 },
+  { evidence_id:"ev_616825a12d", modality:"timeseries", attribution_score:0.0000, summary:"delay_lag_14d historical baseline divergence (score=+0.0000)", passed:false, entity:"Supplier A", consistency_score:0.667 },
+  { evidence_id:"ev_9bd45cbc07", modality:"timeseries", attribution_score:0.0000, summary:"demand_anomaly_score counterfactual stability (score=-0.0000)", passed:false, entity:"Supplier A", consistency_score:0.667 },
+  { evidence_id:"ev_f00dfaee5f", modality:"timeseries", attribution_score:0.0000, summary:"rolling_std_delay decreases risk (score=+0.0000)", passed:false, entity:"Supplier A", consistency_score:0.667 }
 ];
+
 
 const TS_DATA = {
   "Supplier A": {
@@ -273,15 +279,19 @@ function renderAlertTable() {
   const tbody = document.getElementById('alertTableBody');
   tbody.innerHTML = alerts.map((a, i) => {
     const pct = (a.disruption_probability * 100).toFixed(1);
+    const conf = a.confidence !== undefined ? (a.confidence * 100).toFixed(0) : '100';
+    const cal = a.calibrated_probability !== undefined ? (a.calibrated_probability * 100).toFixed(1) : pct;
     const idx = ALERTS.indexOf(a);
     return `<tr>
       <td><span class="risk-pill ${a.risk_level}">${riskIcon(a.risk_level)} ${cap(a.risk_level)}</span></td>
       <td><strong>${a.entity_id}</strong></td>
       <td style="color:var(--text-secondary);font-family:'JetBrains Mono',monospace;font-size:0.78rem">${a.window_start}</td>
       <td><span class="prob-chip ${a.risk_level}">${pct}%</span></td>
-      <td style="color:var(--text-muted)">${a.disruption_type.replace('_',' ')}</td>
+      <td><span class="conf-chip">${conf}%</span></td>
+      <td style="color:var(--text-secondary);font-family:'JetBrains Mono',monospace;font-size:0.8rem">${cal}%</td>
+      <td style="color:var(--text-muted)">${a.disruption_type.replace(/_/g,' ')}</td>
       <td><span class="mini-tag">${horizonLabel(a.horizon_class)}</span></td>
-      <td><span class="ev-badge">✓ ${a.evidence_passed}/5</span></td>
+      <td><span class="ev-badge">✓ ${a.evidence_passed}/${a.evidence_total || 15}</span></td>
       <td><button class="btn-detail" onclick="openModal(${idx})">Details →</button></td>
     </tr>`;
   }).join('');
@@ -415,25 +425,34 @@ function openModal(idx) {
   document.getElementById('modalTitle').textContent = `${a.entity_id} — ${a.window_start}`;
   document.getElementById('modalGaugeVal').textContent = (a.disruption_probability * 100).toFixed(1) + '%';
   document.getElementById('modalGaugeVal').style.color = COLORS[a.risk_level] || COLORS.violet;
-  document.getElementById('modalEvCount').textContent = `${a.evidence_passed}/5 verified`;
+  document.getElementById('modalEvCount').textContent = `${a.evidence_passed}/${a.evidence_total || 15} verified (${(a.consistency_rate*100).toFixed(0)}%)`;
 
   // Gauge
   drawGauge('modalGauge', a.disruption_probability, a.risk_level);
 
   // Details
+  const calPct = a.calibrated_probability !== undefined ? (a.calibrated_probability * 100).toFixed(1) + '%' : (a.disruption_probability * 100).toFixed(1) + '%';
+  const confPct = a.confidence !== undefined ? (a.confidence * 100).toFixed(1) + '%' : '100.0%';
+  const uncertPct = a.uncertainty !== undefined ? `± ${(a.uncertainty * 100).toFixed(2)}%` : '± 0.00%';
+
   document.getElementById('modalDetails').innerHTML = `
     <div class="detail-row"><span class="detail-key">Disruption Type</span><span class="detail-val">${a.disruption_type.replace(/_/g,' ')}</span></div>
     <div class="detail-row"><span class="detail-key">Horizon</span><span class="detail-val">${horizonLabel(a.horizon_class)}</span></div>
     <div class="detail-row"><span class="detail-key">Window Start</span><span class="detail-val">${a.window_start}</span></div>
+    <div class="detail-row"><span class="detail-key">Calibrated Probability</span><span class="detail-val" style="color:var(--cyan)">${calPct}</span></div>
+    <div class="detail-row"><span class="detail-key">Confidence (Uncertainty)</span><span class="detail-val" style="color:var(--emerald)">${confPct} <small style="color:var(--text-muted)">(${uncertPct})</small></span></div>
     <div class="detail-row"><span class="detail-key">Consistency Rate</span><span class="detail-val" style="color:var(--emerald)">${(a.consistency_rate*100).toFixed(0)}%</span></div>
-    <div class="detail-row"><span class="detail-key">Model</span><span class="detail-val">5-Library AI Fusion</span></div>
+    <div class="detail-row"><span class="detail-key">Model Architecture</span><span class="detail-val">5-Library AI Fusion (Intermediate)</span></div>
   `;
 
-  // Cross-modal contributions (synthesised from MultimodalWarning)
+  // Cross-modal contributions from pipeline
+  const sTs = a.share_timeseries !== undefined ? a.share_timeseries : 1.0;
+  const sNews = a.share_news !== undefined ? a.share_news : 0.0;
+  const sEvents = a.share_events !== undefined ? a.share_events : 0.0;
   const contribs = [
-    { name:'Time Series (P1)', share: 0.55, color: COLORS.violet },
-    { name:'News Intel (P2)',   share: 0.30, color: COLORS.rose },
-    { name:'Event Risk (P3)',   share: 0.15, color: COLORS.amber },
+    { name:'Time Series (P1)', share: sTs, color: COLORS.violet },
+    { name:'News Intel (P2)',   share: sNews, color: COLORS.rose },
+    { name:'Event Risk (P3)',   share: sEvents, color: COLORS.amber },
   ];
   document.getElementById('modalContrib').innerHTML = contribs.map(c => `
     <div class="contrib-row">
@@ -441,7 +460,7 @@ function openModal(idx) {
         <span class="contrib-label-name">${c.name}</span>
         <span class="contrib-label-pct">${(c.share*100).toFixed(0)}%</span>
       </div>
-      <div class="contrib-bg"><div class="contrib-fill" style="width:${c.share*100}%;background:${c.color}"></div></div>
+      <div class="contrib-bg"><div class="contrib-fill" style="width:${Math.max(c.share*100, 2)}%;background:${c.color}"></div></div>
     </div>
   `).join('');
 
@@ -450,9 +469,9 @@ function openModal(idx) {
   document.getElementById('modalEvidence').innerHTML = ev.map(e => `
     <div class="modal-ev-item">
       <div class="modal-ev-header">
-        <span class="modality-tag">${e.modality}</span>
-        <span style="font-size:0.72rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace">score: ${e.attribution_score.toFixed(3)}</span>
-        <span class="ev-check pass" style="margin-left:auto">✓ Verified</span>
+        <span class="modality-tag ${e.modality}">${e.modality}</span>
+        <span style="font-size:0.72rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace">score: ${e.attribution_score > 0 ? '+' : ''}${e.attribution_score.toFixed(4)}</span>
+        <span class="ev-check ${e.passed ? 'pass' : 'fail'}" style="margin-left:auto">${e.passed ? '✓ Verified' : '✗ Unverified'}</span>
       </div>
       <div class="modal-ev-text">${e.summary}</div>
     </div>

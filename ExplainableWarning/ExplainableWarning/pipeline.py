@@ -25,6 +25,7 @@ from typing import Any, Dict, List, Optional
 
 import numpy as np
 import pandas as pd
+from sklearn.base import BaseEstimator, ClassifierMixin
 
 from .shap_explainer import FeatureAttributionExplainer, FeatureAttribution
 from .text_attribution import TextAttributionExplainer, TextAttribution
@@ -100,6 +101,7 @@ class ExplainableWarning:
         # Fitted uncertainty estimator (set via fit_uncertainty())
         self._uncertainty_estimator = None
         self._uncertainty_method    = cfg.get("uncertainty_method", "ensemble")
+        self._cached_background     = None
 
     # ------------------------------------------------------------------ #
     # Main integration API (matches Doc 1 Section 4.2)
@@ -113,6 +115,7 @@ class ExplainableWarning:
         news_articles: pd.DataFrame,    # proc.articles_ from NewsIntelligence
         event_features: pd.DataFrame,
         uncertainty_estimator=None,
+        background_data: Optional[Tuple[np.ndarray, np.ndarray]] = None,
     ) -> ExplanationReport:
         """
         Full explanation pipeline for one WarningOutput.
@@ -125,6 +128,7 @@ class ExplainableWarning:
         news_articles  : article-level evidence (proc.articles_, Person 2 output)
         event_features : event risk features (Person 3 output)
         uncertainty_estimator : optional pre-fitted uncertainty estimator
+        background_data : optional tuple (X_background, y_background)
         """
         entity_id    = warning_output.entity_id
         window_start = warning_output.window_start
@@ -141,11 +145,27 @@ class ExplainableWarning:
             X_full, feat_names, ts_idx, news_idx, event_idx = \
                 self._fallback_features(ts_features, entity_id)
 
-        # Build background from the full ts_features set (for SHAP)
-        X_bg, y_bg = self._make_background(
-            model, ts_features, news_articles, event_features
-        )
         X_instance = X_full[:1] if X_full.ndim == 2 else X_full.reshape(1, -1)
+
+        # Build background from provided, cached, or fallback data
+        if background_data is not None:
+            X_bg, y_bg = background_data
+            self._cached_background = background_data
+        elif self._cached_background is not None:
+            X_bg, y_bg = self._cached_background
+        else:
+            X_bg, y_bg = self._make_background(
+                model, ts_features, news_articles, event_features, X_instance=X_instance
+            )
+
+        # Dimension alignment guard for X_bg
+        if X_bg is not None and len(X_bg) and X_instance.shape[1] != X_bg.shape[1]:
+            rng = np.random.default_rng(42)
+            noise = rng.normal(0, 0.05, size=(min(50, len(X_bg)), X_instance.shape[1]))
+            X_bg = np.clip(np.repeat(X_instance, min(50, len(X_bg)), axis=0) + noise, 0.0, 1.0)
+            y_bg = np.zeros(len(X_bg), dtype=int)
+            if len(y_bg) > 1:
+                y_bg[0] = 1
 
         # ── A. Feature attribution ───────────────────────────────────
         fa: Optional[FeatureAttribution] = None
@@ -158,6 +178,7 @@ class ExplainableWarning:
                 )
             except Exception as exc:
                 logger.warning("Feature attribution failed: %s", exc)
+
 
         # ── B. Text attribution ──────────────────────────────────────
         ta: Optional[TextAttribution] = None
@@ -257,10 +278,15 @@ class ExplainableWarning:
         news_articles: pd.DataFrame,
         event_features: pd.DataFrame,
         uncertainty_estimator=None,
+        background_data: Optional[Tuple[np.ndarray, np.ndarray]] = None,
     ) -> List[ExplanationReport]:
         """Explain a list of WarningOutput objects."""
         return [
-            self.explain(model, wo, ts_features, news_articles, event_features, uncertainty_estimator)
+            self.explain(
+                model, wo, ts_features, news_articles, event_features,
+                uncertainty_estimator=uncertainty_estimator,
+                background_data=background_data,
+            )
             for wo in warning_outputs
         ]
 
@@ -305,39 +331,41 @@ class ExplainableWarning:
 
     @staticmethod
     def _get_fusion_predictor(model):
-        """Extract the sklearn-compatible predictor from a MultimodalWarning model."""
-        try:
-            return model.predictor._clf
-        except AttributeError:
-            pass
-        try:
-            return model.fusion
-        except AttributeError:
-            return model
+        """Extract or wrap the sklearn-compatible predictor from a MultimodalWarning model."""
+        return FusionPredictorWrapper(model)
 
     def _unpack_bundle(self, bundle):
         """Extract flat feature array and per-modality indices from ModalityBundle."""
         try:
-            ts_arr    = bundle.timeseries.features if hasattr(bundle, "timeseries") else np.array([])
-            news_arr  = bundle.news.features if hasattr(bundle, "news") else np.array([])
-            event_arr = bundle.events.features if hasattr(bundle, "events") else np.array([])
+            # Check ModalityBundle from MultimodalWarning.feature_alignment
+            if hasattr(bundle, "ts_features"):
+                ts_flat = np.atleast_1d(bundle.ts_features).flatten() if bundle.ts_features is not None else np.array([])
+                news_flat = np.atleast_1d(bundle.news_features).flatten() if bundle.news_features is not None else np.array([])
+                event_flat = np.atleast_1d(bundle.event_features).flatten() if bundle.event_features is not None else np.array([])
 
-            ts_names    = bundle.timeseries.feature_names if hasattr(bundle, "timeseries") else []
-            news_names  = bundle.news.feature_names if hasattr(bundle, "news") else []
-            event_names = bundle.events.feature_names if hasattr(bundle, "events") else []
+                ts_names = list(bundle.ts_names) if bundle.ts_names else [f"ts_{i}" for i in range(len(ts_flat))]
+                news_names = list(bundle.news_names) if bundle.news_names else [f"news_{i}" for i in range(len(news_flat))]
+                event_names = list(bundle.event_names) if bundle.event_names else [f"event_{i}" for i in range(len(event_flat))]
+            else:
+                ts_arr = bundle.timeseries.features if hasattr(bundle, "timeseries") and bundle.timeseries is not None else np.array([])
+                news_arr = bundle.news.features if hasattr(bundle, "news") and bundle.news is not None else np.array([])
+                event_arr = bundle.events.features if hasattr(bundle, "events") and bundle.events is not None else np.array([])
 
-            # Flatten to 1-D arrays
-            ts_flat    = np.atleast_1d(ts_arr).flatten()
-            news_flat  = np.atleast_1d(news_arr).flatten()
-            event_flat = np.atleast_1d(event_arr).flatten()
+                ts_names = list(bundle.timeseries.feature_names) if hasattr(bundle, "timeseries") and bundle.timeseries is not None else []
+                news_names = list(bundle.news.feature_names) if hasattr(bundle, "news") and bundle.news is not None else []
+                event_names = list(bundle.events.feature_names) if hasattr(bundle, "events") and bundle.events is not None else []
+
+                ts_flat = np.atleast_1d(ts_arr).flatten()
+                news_flat = np.atleast_1d(news_arr).flatten()
+                event_flat = np.atleast_1d(event_arr).flatten()
 
             X_full = np.concatenate([ts_flat, news_flat, event_flat]).reshape(1, -1)
             feat_names = list(ts_names) + list(news_names) + list(event_names)
-            n_ts   = len(ts_flat)
+            n_ts = len(ts_flat)
             n_news = len(news_flat)
-            n_ev   = len(event_flat)
-            ts_idx    = list(range(0, n_ts))
-            news_idx  = list(range(n_ts, n_ts + n_news))
+            n_ev = len(event_flat)
+            ts_idx = list(range(0, n_ts))
+            news_idx = list(range(n_ts, n_ts + n_news))
             event_idx = list(range(n_ts + n_news, n_ts + n_news + n_ev))
             return X_full, feat_names, ts_idx, news_idx, event_idx
         except Exception as exc:
@@ -351,8 +379,8 @@ class ExplainableWarning:
         return row, num_cols, list(range(len(num_cols))), [], []
 
     @staticmethod
-    def _make_background(model, ts_df, news_df, event_df):
-        """Create a background feature matrix for SHAP from the ts_features DataFrame."""
+    def _make_background(model, ts_df, news_df, event_df, X_instance=None):
+        """Create a background feature matrix for SHAP/permutation importance."""
         try:
             num_cols = ts_df.select_dtypes(include=[np.number]).columns.tolist()
             X = ts_df[num_cols].fillna(0).values
@@ -361,3 +389,48 @@ class ExplainableWarning:
             return X, y
         except Exception:
             return None, None
+
+
+class FusionPredictorWrapper(ClassifierMixin, BaseEstimator):
+    """Adapts a MultimodalWarning model/fusion into a standard sklearn predictor with predict_proba and predict."""
+    def __init__(self, model):
+        self.model = model
+        self.fusion = getattr(model, "fusion", model)
+        self.classes_ = np.array([0, 1])
+
+    def fit(self, X=None, y=None):
+        return self
+
+    def __sklearn_is_fitted__(self) -> bool:
+        return True
+
+    def predict_proba(self, X: np.ndarray) -> np.ndarray:
+        X = np.atleast_2d(X)
+        # 1. IntermediateFusion numpy backend
+        if hasattr(self.fusion, "_model") and self.fusion._model is not None:
+            X_in = X
+            if hasattr(self.fusion, "_scaler") and self.fusion._scaler is not None:
+                try:
+                    X_in = self.fusion._scaler.transform(X)
+                except Exception:
+                    pass
+            proba = self.fusion._model.predict_proba(X_in)
+            return proba if proba.ndim == 2 else np.column_stack([1.0 - proba, proba])
+        # 2. EarlyFusion
+        elif hasattr(self.fusion, "_clf") and self.fusion._clf is not None:
+            proba = self.fusion._clf.predict_proba(X)
+            return proba if proba.ndim == 2 else np.column_stack([1.0 - proba, proba])
+        # 3. Model with predict_proba
+        elif hasattr(self.fusion, "predict_proba"):
+            try:
+                res = self.fusion.predict_proba(X)
+                return res if res.ndim == 2 else np.column_stack([1.0 - res, res])
+            except Exception:
+                pass
+        p1 = np.full(len(X), 0.5)
+        return np.column_stack([1.0 - p1, p1])
+
+    def predict(self, X: np.ndarray) -> np.ndarray:
+        return (self.predict_proba(X)[:, 1] >= 0.5).astype(int)
+
+

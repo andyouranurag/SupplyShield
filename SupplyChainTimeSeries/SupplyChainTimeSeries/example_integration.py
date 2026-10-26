@@ -1,9 +1,18 @@
-"""Runnable example: python -m SupplyChainTimeSeries.example_integration"""
+import sys
 from pathlib import Path
 import pandas as pd
-from . import TimeSeriesProcessor, forecast_demand
 
 PACKAGE_DIR = Path(__file__).resolve().parent
+if str(PACKAGE_DIR.parent) not in sys.path:
+    sys.path.insert(0, str(PACKAGE_DIR.parent))
+if str(PACKAGE_DIR) not in sys.path:
+    sys.path.insert(0, str(PACKAGE_DIR))
+
+try:
+    from . import TimeSeriesProcessor, forecast_demand
+except (ImportError, ValueError):
+    from SupplyChainTimeSeries import TimeSeriesProcessor, forecast_demand
+
 DATA_PATH = PACKAGE_DIR / "data" / "Inventory_SupplyChain_Dataset.csv"
 OUTPUT_DIR = Path.cwd()
 

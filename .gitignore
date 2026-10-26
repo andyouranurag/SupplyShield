@@ -33,3 +33,12 @@ htmlcov/
 .idea/
 .vscode/
 Thumbs.db
+
+# Local Reports & Slides
+INTEGRATED_PROJECT_REPORT.md
+INTEGRATED_PRESENTATION_SLIDES.md
+
+# Office & LibreOffice lock files
+.~lock.*#
+~$*
+*.tmp
